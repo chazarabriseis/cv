@@ -1,0 +1,241 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+
+.horizontal-list{
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+.summary {
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.header2 {
+  background:  linear-gradient(#665D78,#3E394F);
+  color: #A98A6D;
+  font-weight: 700;
+}
+
+.biopic {
+   padding:1px;
+   border:1px solid white;
+   background-color:#665D78;
+}
+
+.h2_color {
+  color: #49274A;
+}
+
+
+.paddinger {
+  padding: 20px;
+}
+
+.distance {
+  padding-bottom: 10px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.award {
+  font-weight: bold;
+}
+
+.paddinger1 {
+  padding-right: 40px;
+  padding-top: 10px;
+}
+
+.paddinger2 {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.paddinger3 {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.name {
+  font-weight: 100;
+}
+
+.main_body1 {
+  background-color: #F8EEE7;
+  color: #49274A;
+  
+}
+
+.main_body2 {
+  background-color: #F4DECB;
+  color: #301934;
+
+}
+
+.black {
+  color: #241A11;
+}
+
+.transfskill-background {
+    background-image: url("/images/transfskill.jpg");
+
+}
+
+.date-text {
+  color: grey;
+  font-weight: 300i;
+}
+
+
+.expskill-background {
+    background-image: url("/images/expskill.jpg");
+    color: white;
+    background-position: center; 
+    background-size: cover;
+}
+
+.compskill-background {
+    background-image: url("/images/compskill.jpg");
+    color: white;
+    background-size: cover;
+}
+
+.h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.header {
+  font-size: 55px;
+  text-shadow: white 0px 0px 2px;
+  border: solid 2px;
+  background-image: url("/images/panorama.jpg");
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+  background-repeat: repeat;
+	}
+
+.thumbnail {
+  height: 44px;
+  width: 44px;
+}
+
+.patent {
+  width: 100%;
+  position: center;
+  padding-top: 10px;
+}
+
+
+.error {
+    color: red
+}
+
+.first-box {
+  background-color: #e6f2ff
+}
+.second-box {
+  background-color: #b3e6b3
+}
+.third-box {
+  background-color: #e69900
+}
+
+label {
+    display: block;
+    font-size: 20px;
+}
+
+input[type=text] {
+    width: 400px;
+    font-size: 20px;
+    padding: 2px;
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
+    font-size: 17px;
+    font-family: monospace;
+} 
+
+input[type=submit] {
+    font-size: 24px;
+}
+
+hr {
+    margin-top: 20px;
+}
+
+.post + .post {
+    margin-top: 20px;
+}
+
+.post-subject {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.post-body {
+    margin: 0;
+   font-size: 17px;
+}
+
+
+.main-title  {
+    background-color: blue;
+    display: block;
+    color: #222;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.post-heading {
+    position: relative;
+    border-bottom: 3px solid #666;
+}
+
+.post-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.post-date {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    color: #999;
+
+}
+
+.age {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: gray;
+    font-size: 12px;
+}
+
+.href {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: gray;
+    font-size: 12px;
+}

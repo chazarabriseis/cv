@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form method="post">
+	What is your message you want to encrypt?
+	<br>
+	<textarea id="myTextarea" type="text "name="textarea" rows="10" cols="50">{{text}}</textarea>
+	<br>
+	<input type = "submit">	
+</form>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+	
+<div class="login-area">
+    {% if username %}
+      {{username}} (<a class="login-link" href="/blog/logout">logout</a>)
+    {% else %}
+      <a class="login-link" href="/blog/login">login</a>
+      |
+      <a class="login-link" href="/blog/signup">signup</a>
+    {% endif %}
+</div>
+
+<hr>
+
+{% for entry in allposts %}
+	<div class="post">
+		<div class="post-heading">
+    		<a href={{'/blog/'+entry.key().id()|string}} STYLE="text-decoration: none" class="post-title">
+      			{{entry.subject}}
+    		</a>
+			<div class="post-date">
+      			{{entry.created.strftime("%b %d, %Y")}}
+    		</div>
+  		</div>
+
+	<!--	<div class="post-subject">{{entry.subject}} posted on {{entry.created.strftime("%b %d, %Y")}} the following: </div> -->
+		<pre class="post-body">{{entry.text}}</pre>
+	</div>
+{% endfor %}
+
+<hr>
+
+<div class="login-area">
+      <a class="login-link" href="/blog/addpost">addpost</a>
+</div>
+
+<div class="age">
+  {{queried}}
+</div>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row">
+      <a href="/blog">gotoblog</a>
+</div>
+
+<div class="row">
+<form method="post" >
+	<h1 style="background-color: lightblue"; color: #222, margin: 0 height: 70px> 
+		What do you want to add?
+	</h1>
+
+	<label>
+		<div>Subject</div>
+		<input type="text" name="subject" value="{{subject}}">
+	</label>
+
+	<label>
+		<div>Text</div>
+		<textarea name="text">{{text}}</textarea>
+	</label>
+
+	<div class="error">{{error}}</div>
+
+	<input type="submit" name="submit" value="Enter">
+</form>
+</div>
+
+{% endblock %}
