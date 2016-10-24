@@ -12,7 +12,6 @@ var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</sp
 var HTMLbioPic = '<img src="%data%" class="img-responsive biopic">';
 var HTMLwelcomeMsg = '<span>%data%</span>';
 
-var HTMLskillsStart = '<ul id="skills"></ul>';
 var HTMLskillImage = '<li class="horizontal-list"><img src="%data%" class="img-responsive thumbnail" data-toggle="modal" data-target="#%modal%"></li>';
 var HTMLskills = '<li class="horizontal-list">%data%</li>';
 var HTMLskillModalimage = '<img class="img-responsive thumbnail" src="%data%" id="CompSkill">';
@@ -66,12 +65,11 @@ var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<br><a href="#">%data%</a>';
 
 var HTMLlanguageStart = '<ul id="languages"></ul>'
-var HTMLlanguage = '<li class="horizontal-list">%data%( %level% )</li><li class="horizontal-list">   </li>';
+var HTMLlanguage = '<li class="horizontal-list">%data% (%level%)</li><li class="horizontal-list">   </li>';
 
 var HTMLinterestsStart = '<ul id="interests"></ul>'
 var HTMLinterest = '<li class="horizontal-list">%data%</li><li class="horizontal-list">   </li>';
 
-var googleMap = '<div id="map"></div>';
 
 //Create a google map that shows all locations
 var map;    // declares a global map variable
@@ -93,6 +91,10 @@ function locationFinder() {
      locations.push(julia.basics.location);
 
      julia.education.forEach(function(school){
+       locations.push(school.location);
+     });
+
+     julia.studentPlacement.forEach(function(school){
        locations.push(school.location);
      });
 
@@ -192,4 +194,46 @@ window.addEventListener('load', initializeMap);
 window.addEventListener('resize', function(e) {
   //Make sure the map bounds get updated on page resize
 map.fitBounds(mapBounds);
+});
+
+//Carousel stuff
+// invoke the carousel
+$('#myCarousel').carousel({
+  interval: 30000
+});
+
+/* SLIDE ON CLICK */ 
+
+$('.carousel-linked-nav > li > a').click(function() {
+
+    // grab href, remove pound sign, convert to number
+    var item = Number($(this).attr('href').substring(1));
+
+    // slide to number -1 (account for zero indexing)
+    $('#myCarousel').carousel(item - 1);
+
+    // remove current active class
+    $('.carousel-linked-nav .active').removeClass('active');
+
+    // add active class to just clicked on item
+    $(this).parent().addClass('active');
+
+    // don't follow the link
+    return false;
+});
+
+/* AUTOPLAY NAV HIGHLIGHT */
+
+// bind 'slid' function
+$('#myCarousel').bind('slid.bs.carousel', function() {
+
+    // remove active class
+    $('.carousel-linked-nav .active').removeClass('active');
+
+    // get index of currently active item
+    var idx = $('#myCarousel .item.active').index();
+
+    // select currently active item and add active class
+    $('.carousel-linked-nav li:eq(' + idx + ')').addClass('active');
+
 });

@@ -6,10 +6,10 @@ var julia = {
 		"email": "julia.s.baldauf@gmail.com",
 		"phone": "+61 (0) 435 - 340 350",
 		"website": "",
-		"summary": "I am a passionate scientist and leader. I am driven by my curiosity to see if processes and devices can be improved by questioning the status quo. My very structured and logical approach enables me to think projects through, from a high-level perspective all the way to the important details. I enjoy working as part of a team and creating a high preforming environment in which people support and respect each other.",		
+		"summary": "I am a passionate scientist and leader. I enjoy working with people and creating new opportunities. I am a doer and take things in my own hands. I believe in lead by example and a non-bullshit policy. I am a very social person and thrive from creating a team that works well together and works towards a common goal, respecting each other and …",
 		"location": "267 Moray Street, 3205 VIC, Melbourne, Australia",
 		"profiles": [{
-			"network": "LinkedIn",
+			"network": "LikedIn",
 			"username": "JuliaBaldauf",
 			"url": "https://www.linkedin.com/in/julia-baldauf-95716950?trk=hp-identity-name"
 		},{
@@ -182,33 +182,33 @@ var julia = {
 
 	"courses": [{
 		"date": "August 2016",
-		"website":"https://www.udacity.com/course/javascript-basics--ud804",
+		"website":"",
 		"school":"Udacity",
 		"name": "JavaScript Basics"
 	}, {
 		"date": "August 2016",
-		"website":"https://www.udacity.com/course/intro-to-html-and-css--ud304",
+		"website":"",
 		"school":"Udacity",
 		"name": "Intro to HTML and CSS"
 	}, {
 		"date": "July 2016",
-		"website":"https://www.udacity.com/course/web-development--cs253",
+		"website":"",
 		"school":"Udacity",
 		"name": "Web Development"
 	}, {
 		"date": "June 2016",
-		"website":"https://www.udacity.com/course/software-development-process--ud805",
+		"website":"",
 		"school":"Udacity",
 		"name": "Software Development Process"
 	}, {
 		"date": "October 2015",
-		"website":"http://neuralnetworksanddeeplearning.com/chap1.html",
+		"website":"",
 		"school":"Online",
-		"name": "Neural Networks and deep Learning Book"
+		"name": "Deep Learning Course"
 	}, {
 		"date": "July 2015",
-		"website":"http://resbaz.github.io/2015-07-13-unimelb/",
-		"school":"ResBaz, University of Melbourne",
+		"website":"",
+		"school":"University of Melbourne",
 		"name": "Python Course"
 	}, {
 		"date": "March 2015",
@@ -227,8 +227,8 @@ var julia = {
 		"name": "Leading Relationship"
 	}, {
 		"date": "August 2014",
-		"website":"https://www.vlsci.org.au/news/MDnews0713",
-		"school":"VLSCI, University of Melbourne",
+		"website":"",
+		"school":"University of Melbourne",
 		"name": "MD Workshop"
 	}, {
 		"date": "March 2014",
@@ -237,17 +237,17 @@ var julia = {
 		"name": "Leadership in a Project Team Environment"
 	}, {
 		"date": "October 2013",
-		"website":"https://www.coursera.org/learn/creativity-innovation",
+		"website":"",
 		"school":"Coursera",
 		"name": "Creativity, Innovation and Change"
 	}, {
 		"date": "September 2013",
-		"website":"http://www.virology.ws/2013/12/03/virology-at-coursera/",
+		"website":"",
 		"school":"Coursera",
 		"name": "Virology1 – How viruses work"
 	}, {
 		"date": "August 2013",
-		"website":"https://www.coursera.org/learn/drug-development",
+		"website":"",
 		"school":"Coursera",
 		"name": "Drug Discovery, Development & Commercialization"
 	}, {
@@ -469,6 +469,12 @@ var julia = {
 	}],
 
 	"awards": [{
+		"date": "July 2016",
+		"title": "Professional Fellowship",
+		"awarder": "Pollinate Energy",
+		"summary": "",
+		"website":""
+	}, {
 		"date": "May 2016",
 		"title": "High Value Patent Application Award",
 		"awarder": "IBM",
@@ -490,56 +496,56 @@ var julia = {
 		"date": "June 2012",
 		"title": "Young Nanoscience Ambassador Award",
 		"awarder": "Australian Nanotechnology Network",
-		"summary": "PhD student Julia Baldauf of the Mulvaney Group won the Victorian Young Nanotechnology Ambassador Award given by the Australian Nanotechnology Network for her enthusiastic involvement in promoting science and science education. Julia has been actively engaged in outreach activities including visits to metropolitan and regional schools to inspire students about nanotechnology and more broadly science education. ",
-	"website":"http://www.ausnano.net/content/young_ambass_awards"
+		"summary": "",
+		"website":""
 	}, {
 		"date": "June 2011",
 		"title": " Overseas Research Experience Scholarship",
 		"awarder": "University of Melbourne",
 		"summary": "",
-		"website":"https://studenteforms.app.unimelb.edu.au/apex/f?p=153:2:0:::2:P2_ID:462"
+		"website":""
 	}, {
 		"date": "June 2009",
 		"title": "International Postgraduate Research Scholarship and Science Faculty Scholarship",
 		"awarder": "University of Melbourne",
 		"summary": "",
-		"website":"http://arts.unimelb.edu.au/scholarships/international-postgraduate-research-scholarship-iprs"
+		"website":""
 	}, {
 		"date": "May 2007",
 		"title": "Travel Scholarship",
 		"awarder": "German Academic Exchange Service (DAAD)",
 		"summary": "",
-		"website":"https://www.daad.org/scholarship"
+		"website":""
 	}, {
 		"date": "May 2007",
 		"title": "Research Experiences for Undergraduates (REU) Scholarship",
 		"awarder": "University of Hawaii",
 		"summary": "",
-		"website":"http://www2.ifa.hawaii.edu/newsletters/article.cfm?a=352&n=30"
+		"website":""
 	}, {
 		"date": "September 2005",
 		"title": "ERASMUS Travel Scholarship",
 		"awarder": "Ludwig-Maximillians University",
 		"summary": "",
-		"website":"http://www.uni-muenchen.de/studium/studium_int/auslandsstudium/austausch/erasmus/progr_erklaerung/index.html"
+		"website":""
 	}, {
 		"date": "April 2004",
 		"title": "Travel Award",
 		"awarder": "Wilhelm and Else Hereaus Foundation",
 		"summary": "",
-		"website":"http://www.we-heraeus-stiftung.de/index.php?option=com_content&view=article&id=132&Itemid=563"
+		"website":""
 	}, {
 		"date": "October 2002",
 		"title": "Young Ladies of Technology Network Member (YOLANTE)",
 		"awarder": "Siemens",
 		"summary": "",
-		"website":"http://www.siemens.de/jobs/studenten/studentenprogramme/yolante/seiten/default.aspx"
+		"website":""
 	}],
 
 	"volunteer": [{
 			"startDate": "October 2016",
 			"organization": "Pollinate Energy",
-			"website": "https://pollinateenergy.org/our-programs/pf/",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "Lucknow, India",
@@ -547,7 +553,7 @@ var julia = {
 		}, {
 			"startDate": "September 2016",
 			"organization": "Organised IBM Research’s involvement at EXITE Camp",
-			"website": "http://www.clarendon.vic.edu.au/wp-content/uploads/IBM-EXITE-Camp-2016-Information-1.pdf",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
@@ -555,15 +561,15 @@ var julia = {
 		}, {
 			"startDate": "July 2016",
 			"organization": "Joined VR Hackathon on urban sustainability in Melbourne",
-			"website": "http://medialab.futureearth.org/anthronaut/melbourne/",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
 			"position": ""
 		}, {
 			"startDate": "January 2016",
-			"organization": "Volunteer for “ICT in schools” program",
-			"website": "http://www.scientistsinschools.edu.au/ICT/",
+			"organization": "Volunteer for “ICT in schools” program  ",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
@@ -571,7 +577,7 @@ var julia = {
 		}, {
 			"startDate": "October 2015",
 			"organization": "Helped organising a ‘Second to give’ fundraiser event",
-			"website": "http://www.secondstogive.org/",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
@@ -579,7 +585,7 @@ var julia = {
 		}, {
 			"startDate": "September 2015",
 			"organization": "Organised IBM Research’s involvement at the EXITE Camp",
-			"website": "http://www.clarendon.vic.edu.au/wp-content/uploads/IBM-Ballarat-EXITE-Camp-Flyer-2015.pdf",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
@@ -587,7 +593,7 @@ var julia = {
 		}, {
 			"startDate": "April 2015",
 			"organization": "Volunteer in Nepal for Journey to Nepal Organisation",
-			"website": "http://www.journey-nepal.org/Nepal/",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
@@ -595,7 +601,7 @@ var julia = {
 		}, {
 			"startDate": "May2014/May 2015",
 			"organization": "Volunteer for Foundation of Young Australians",
-			"website": "http://www.fya.org.au/",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
@@ -603,7 +609,7 @@ var julia = {
 		}, {
 			"startDate": "September 2014",
 			"organization": "Presented at the IBM EXITE Camp",
-			"website": "http://www-07.ibm.com/employment/au-en/diversity/women.html",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
@@ -611,7 +617,7 @@ var julia = {
 		}, {
 			"startDate": "November 2013",
 			"organization": "Volunteer for Residential Indigenous Science Experience",
-			"website": "http://www.gtac.edu.au/rise/",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
@@ -627,7 +633,7 @@ var julia = {
 		}, {
 			"startDate": "October 2011 - 2013",
 			"organization": "Volunteer for “Scientist in Schools Program” of CSIRO",
-			"website": "http://www.scientistsinschools.edu.au/",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
@@ -643,7 +649,7 @@ var julia = {
 		}, {
 			"startDate": "April 2011 - April 2012",
 			"organization": "President - Chemistry Postgraduate Society",
-			"website": "http://chemistry.unimelb.edu.au/engage/chemistry-postgraduate-society-cps",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
@@ -683,7 +689,7 @@ var julia = {
 		}, {
 			"startDate": "May 2010",
 			"organization": "Australian Nanotechnology Network Member",
-			"website": "http://www.ausnano.net/index.php?page=home",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
@@ -691,7 +697,7 @@ var julia = {
 		}, {
 			"startDate": "April 2010 - April 2011",
 			"organization": "Treasurer - Chemistry Postgraduate Society",
-			"website": "http://chemistry.unimelb.edu.au/engage/chemistry-postgraduate-society-cps",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
@@ -699,7 +705,7 @@ var julia = {
 		}, {
 			"startDate": "August 2009 - April 2012",
 			"organization": "Chemistry Postgraduate Society Member",
-			"website": "http://chemistry.unimelb.edu.au/engage/chemistry-postgraduate-society-cps",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
@@ -707,7 +713,7 @@ var julia = {
 		}, {
 			"startDate": "February 2007",
 			"organization": "Deutsche Physikalische Gesellschaft Member",
-			"website": "https://www.dpg-physik.de/index.html?lang=en",
+			"website": "",
 			"endDate": "",
 			"summary": "",
 			"location": "",
@@ -797,7 +803,7 @@ var julia = {
 
 	"languages": [{
 		"name": "German",
-		"level": "native speaker"
+		"level": "Native speaker"
 	}, {
 		"name": "English",
 		"level": "fluent"
@@ -843,12 +849,13 @@ $('#header_pic').append(asign(HTMLbioPic, julia.basics.picture));
 $('#header').append(asign(HTMLwelcomeMsg, julia.basics.summary));
 
 if(julia.skills.length != 0) {
+	$('#skill').append(HTMLskillsStart);
 	Object.keys(julia.skills).forEach(function(key, keyIndex) {
 		var keyname = Object.keys(julia.skills[key]);
+		var formattedImage = HTMLskillImage.replace('%modal%',keyname)
+		$('#skills').append(asign(formattedImage,julia.skillImages[key].image));
+		$('#skills').append(asign(HTMLskills,keyname));
 		if (keyname == "ComputationalSkills") {
-			var formattedImage = HTMLskillImage.replace('%modal%',keyname)
-			$('#skill_comp').append(asign(formattedImage,julia.skillImages[key].image));
-			$('#skill_comp').append(asign(HTMLskills,keyname));
 			//$('#CompSkillText').append(asign(HTMLskillModalimage,julia.skillImages[key].image));
 			for (skill in julia.skills[key].ComputationalSkills) {
 				$("#CompSkillText").append(asign(HTMLskillModaltext,julia.skills[key].ComputationalSkills[skill].name));
@@ -858,9 +865,6 @@ if(julia.skills.length != 0) {
 			};
 		};
 		if (keyname == "ExperimentalSkills") {
-			var formattedImage = HTMLskillImage.replace('%modal%',keyname)
-			$('#skill_exp').append(asign(formattedImage,julia.skillImages[key].image));
-			$('#skill_exp').append(asign(HTMLskills,keyname));
 			//$('#ExpSkillText').append(asign(HTMLskillModalimage,julia.skillImages[key].image));
 			for (skill in julia.skills[key].ExperimentalSkills) {
 				$("#ExpSkillText").append(asign(HTMLskillModaltext,julia.skills[key].ExperimentalSkills[skill].name));
@@ -870,9 +874,6 @@ if(julia.skills.length != 0) {
 			};
 		};
 		if (keyname == "TransferableSkills") {
-			var formattedImage = HTMLskillImage.replace('%modal%',keyname)
-			$('#skill_tra').append(asign(formattedImage,julia.skillImages[key].image));
-			$('#skill_tra').append(asign(HTMLskills,keyname));
 			//$('#TransSkillText').append(asign(HTMLskillModalimage,julia.skillImages[key].image));
 			for (skill in julia.skills[key].TransferableSkills) {
 				$("#TransSkillText").append(asign(HTMLskillModaltext,julia.skills[key].TransferableSkills[skill]));
@@ -1033,4 +1034,6 @@ if (julia.interests.length != 0) {
 
 $("#contact").append(julia.basics.email)
 $("#contact").append(julia.basics.phone)
+
+$("#mapDiv").append(googleMap);
 
