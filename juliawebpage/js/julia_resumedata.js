@@ -327,6 +327,16 @@ var julia = {
 		"image": "",
 		"comment": ""
 	}, {
+		"title": "Nanosensors for next generation drug screening",
+		"authors": ["Sr. K. Kannam","M. T. Downton","N. Gunn","S. C. Kim","P. R. Rogers","C. Schieber","J. S. Baldauf","J. M. Wagner","D. Scott","R. Bathgate","S. Skafidas","S. Harrer"],
+		"journal": "SPIE Proceedings ",
+		"volume": "8923",
+		"year": "2013",
+		"website": "",
+		"summary": "One promising path for future drug screening technologies is to examine the binding of ligands to target proteins at the single molecule level by passing them through nanometer sized pores and measuring the change in pore current during translocation. With the aim of evaluating such technologies we perform virtual experiments on the translocation of proteins through silicon nitride nanopores.",	
+		"image": "images/publication/Nanopore.png",
+		"comment": ""
+	}, {
 		"title": "Fullerene-fullerene interactions in water: A molecular dynamic study",
 		"authors": ["J. Baldauf", "A. Makarucha", "M. Downton", "G.Yiapanis"],
 		"journal": "Journal of Physical Chemistry C",
