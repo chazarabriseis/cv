@@ -28,8 +28,8 @@ var julia = {
 		"website": "http://www.research.ibm.com/labs/australia/index.shtml",
 		"startDate": "July 2015",
 		"endDate": "November 2016",
-		"summary": "As a potential future leader of IBM Reseach Australia I was given a permanent position as a Staff Researcher. Restructuring of the Research Lab meant a stronger focus on healthcare and the dissolving of the Natural Resources efforts. I moved into the cognitive analytics team driving the agenda of the potential of deep learning in the health care and finace sectors. This involved up skillling to machine learning. I focused on neural networks and worked on a project labelling OCT images of arteries. I was assige to the IDT team improving the Labs innovative ouptout and mentoring others.",
-		"highlights": [""]
+		"summary": "As a potential future leader of IBM Research Australia I was given a permanent position as a Staff Researcher. Restructuring of the Research Lab meant a stronger focus on healthcare, dissolving the Natural Resources efforts. I moved into the cognitive analytics team driving the agenda deep learning in the healthcare and finance sectors. This involved up skilling to machine learning. I focused on neural networks and worked on a project labelling OCT images of arteries. As a continuing member of the IDT team I helped to improve the Labs innovative output and mentoring others.",
+				"highlights": [""]
 	}, {
 		"company": "IBM Research Australia",
 		"location": "Melbourne, Australia",
@@ -37,8 +37,7 @@ var julia = {
 		"website": "http://www.research.ibm.com/labs/australia/index.shtml",
 		"startDate": "July 2013",
 		"endDate": "June 2015",
-		"summary": "I was hired to work in the Bionanosensor team, setting up the epxerimental facilities and developing the stratgic plan of the project. As this project got moved back to IBM Research Yorktown I moved in the  Nanotechnology in Natural Resources team. Throghout this time IBM Research Australia my leadership potential and enrolled me in the IBM emergig talent program and assigned me the team lead of the Nanotechnology in Natural Resources team. This role involved strategic planning across our Lab and the other global Labs and working closely with clients. I succesfully developed trustful relationships with clients by understanding their needs and proposing solutions resulting in signing a ‘Joint Study Agreement’ with Metso. Furthermore, I helped this interdisciplinary team working succesfully together. I also contributed technically by learning new skills in the field of computational science. Furthermore, as a member of the ‘Invention Disclosure Team’ I contribute to the Labs innovation output.",
-		"highlights": ["Leading Nanotechnology in NR team", "Emerging Leader Program"]
+		"summary": "I was hired to work in the Bionanosensor team, setting up the experimental facilities and developing the strategic plan of the project. As this project got moved back to IBM Research Yorktown I moved in the  Nanotechnology in Natural Resources team taking over the leadership of this team. I got enrolled in the IBM emerging talent program to help unfold my potential in this role and as a future leader. This team leadership role role involved strategic planning across the Australia Research Lab together with the other global Labs as well as working closely with clients. I successfully developed trustful relationships with clients by understanding their needs and proposing solutions resulting in signing a ‘Joint Study Agreement’ with Metso. Furthermore, I enabled this interdisciplinary team to work successfully together by defining a goal and providing guidance. I also contributed technically by learning new skills in the field of computational science resulting in two publications. Furthermore, I was appointed a member of the ‘Invention Disclosure Team’ to help drive the Labs innovation output.",	"highlights": ["Leading Nanotechnology in NR team", "Emerging Leader Program"]
 	}, {
 		"company": "University of Melbourne",
 		"location": "Melbourne, Australia",
@@ -46,7 +45,7 @@ var julia = {
 		"website": "http://www.nanoparticle.com/",
 		"startDate": "February 2013",
 		"endDate": "April 2013",
-		"summary": "In this role in Paul Mulvaney's Nanoscience Lab I was responsible for the training of new users in the application of various instruments which I built/maintained during my time as a PhD student and knowledge transfer to help formulate new research questions and projects. I enjoy sharing my knowledge and expertise and I was always able to successfully develop and maintain relationships. This is reflected in my several co-authorship publications with different groups. I believe that one key factor in this success is my ability to show respect and interest towards people from different backgrounds and with diverse opinions, which gains me respect and trust in return. As part of this job I also helped writing and editing research grant applications.",
+		"summary": "In this role in Paul Mulvaney's Nanoscience Lab I was responsible for the training of new users in the application of various instruments which I built/maintained during my time as a PhD student and knowledge transfer to help formulate new research questions and projects. I enjoy sharing my knowledge and expertise and I was always able to successfully develop and maintain relationships. This is reflected in my several co-authorship publications with different groups. I believe that one key factor in this success is my ability to show respect and interest towards people from different backgrounds and with diverse opinions, which gains me respect and trust in return.",
 		"highlights": [""]
 	}], 
 
@@ -118,7 +117,7 @@ var julia = {
 	"education": [{
 		"institution": "University of Melbourne",
 		"location": "Melbourne, Australia",
-		"image" : "",
+		"image" : "images/doktorarbeit.png",
 		"area": "Physical Chemistry",
 		"group": "Nanoparticle Group",
 		"supervisor": "Prof. Mulvaney",
@@ -132,7 +131,7 @@ var julia = {
 	}, {
 		"institution": "Ludwig-Maximillians University",
 		"location": "Munich, Germany",
-		"image" : "",
+		"image" : "images/diplomarbeit.png",
 		"area": "Physics",
 		"group": "Photonics and Optoelectronics Group",
 		"website": "http://www.phog.physik.lmu.de/",
@@ -343,7 +342,7 @@ var julia = {
 		"journal": "Journal of Physical Chemistry C",
 		"volume": "submitted",
 		"year": "",
-		"website": "",
+		"website": "http://pubs.acs.org/doi/abs/10.1021/acs.jpcb.6b07471",
 		"summary": "In this paper, we used explicit solvent molecular dynamic simulations to show that size- and shape-dependent distortions of the water layer near the surface affects the aggregation of nested fullerenes in water. Spherically shaped particles transition quickly into contact, while larger fullerenes, characterized by a lower sphericity, cluster at a much slower rate.",	"image": "images/publication/TOC.png",
 		"comment": ""
 	}, {
@@ -820,6 +819,7 @@ var julia = {
 	"interests": [
 			"Rock climbing",
 			"Mountaineering",
+			"Beachvolleyball",
 			"Gardening",
 			"Yoga",
 			"Traveling",
@@ -958,6 +958,7 @@ for (school in schools) {
 		$('.education-entry:last').append(asign(HTMLschoolSummary,julia.education[school].thesisTitle));
 		$('.education-entry:last').append(asign(HTMLschoolImage,julia.education[school].image));
 		}
+	$('.education-entry:last').append('<hr>')
 	}
 }
 displayEducation(julia.education);	
@@ -1042,6 +1043,8 @@ if (julia.interests.length != 0) {
 	};
 } 
 
+$("#contact").append('<span class="bold"> Email: </span>')
 $("#contact").append(julia.basics.email)
+$("#contact").append('<span class="bold">   Phone: </span>')
 $("#contact").append(julia.basics.phone)
 

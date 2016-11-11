@@ -75,6 +75,80 @@ class WelcomePage(Handler):
         site = inpt2site[inpt]
         self.redirect(site)
 
+
+### SHOPPING
+class ShoopingHandler(Handler):
+    def get(self):
+        items = self.request.get_all("food")
+        self.render("shopping_list.html", items = items)
+
+
+### FIZZBUZZ
+class FizzBuzzHandler(Handler):
+    def get(self):
+        n = self.request.get('n')
+        if n == '':
+            n=10
+        else:
+            n = int(n)
+        self.render('fizzbuzz.html', n = n)
+
+
+### ROT13
+class Rot13Handler(Handler):
+    def get(self):
+        #text = self.request.get('textarea')
+        self.render('rot13.html', text = "")
+
+    def post(self):
+        text = self.request.get('textarea')
+        text = convert_rot13(text)
+        self.render('rot13.html', text = text)
+
+
+### ASCIICHAN
+class Art(db.Model):
+    title = db.StringProperty(required = True)
+    art = db.TextProperty(required = True)
+    created = db.DateTimeProperty(auto_now_add = True)
+    coords = db.GeoPtProperty() #for backwards compatibilty it's not required
+
+class AsciichanHandler(Handler):
+    def render_front(self, title="", art="", error=""):
+        arts = top_arts()
+        #if we have art, show map with the art
+        points = filter(None, (a.coords for a in arts))
+        #create image url with all points
+        img_url = None
+        if points:
+            img_url = gmaps_img(points)
+            #check if the created url is working
+            #self.write(img_url)
+        self.render('asciifront.html',title=title,art=art,error=error,arts=arts,img_url=img_url)
+
+    def get(self):
+        #insert here a line for debugging, use repr to print a python object with html
+        #self.write(repr(get_coors(self.request.remote_addr)))
+        self.render_front()
+
+    def post(self):
+        title = self.request.get("title")
+        art = self.request.get("art")
+
+        if title and art:
+            #self.write("thanks!")
+            a = Art(title = title, art = art)
+            coords = get_coors(self.request.remote_addr)
+            if coords:
+                a.coords = coords
+            a.put()
+            #return the arts and update the cache
+            top_arts(True)
+            self.redirect('/asciichan')
+        else:
+            error = "Please enter both title and some artwork!"
+            self.render_front(title, art, error)
+
 ### Blog
 class Posts(db.Model):
     subject = db.StringProperty(required = True)
@@ -253,16 +327,14 @@ class ResumeHandler(Handler):
 	def get(self):
 		self.render('cv.html')
 
-class DiaryHandler(Handler):
-    def get(self):
-        self.render('diary.html')
-
-class CupHandler(Handler):
-    def get(self):
-        self.render('cup.html')
+		
 
 app = webapp2.WSGIApplication([
     ('/', WelcomePage),
+    ('/shopping', ShoopingHandler),
+    ('/fizzbuzz', FizzBuzzHandler),
+    ('/rot13', Rot13Handler),
+    ('/asciichan', AsciichanHandler),
     ('/blog/?(?:/.json)?', BlogHandler),
     ('/blog/addpost', AddPostHandler),
     ('/blog/logout', LogoutHandler),
@@ -270,12 +342,7 @@ app = webapp2.WSGIApplication([
     ('/blog/login', LoginHandler),
     ('/blog/flush', FlushHandler),
     ('/blog/([0-9]+)(?:.json)?', PostHandler),
-    ('/resume', ResumeHandler),
-    ('/diary', DiaryHandler),
-    ('/cup', CupHandler)
+    ('/resume', ResumeHandler)
 ], debug=True)
-
-
-
 
 

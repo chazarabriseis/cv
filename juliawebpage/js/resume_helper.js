@@ -10,7 +10,7 @@ var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="img-responsive biopic">';
-var HTMLwelcomeMsg = '<span>%data%</span>';
+var HTMLwelcomeMsg = '<p align="justify">%data%</p>';
 
 var HTMLskillImage = '<li class="horizontal-list"><img src="%data%" class="img-responsive thumbnail" data-toggle="modal" data-target="#%modal%"></li>';
 var HTMLskills = '<li class="horizontal-list">%data%</li>';
@@ -23,7 +23,7 @@ var HTMLworkEmployer = '<a href="%href%">%data%</a>';
 var HTMLworkTitle = ' - %data%';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
-var HTMLworkDescription = '<p>%data%</p>';
+var HTMLworkDescription = '<p align="justify">%data%</p>';
 
 var HTMLpublicationStart = '<div class="publication-entry text-center"></div>';
 var HTMLpublicationTitle = '<hr><a href="%href%" class="bold text-center">%data%</a>';
@@ -31,7 +31,7 @@ var HTMLpublicationDates = '<div>%data%</div>';
 var HTMLpublicationAuthors = '<div class="italic">%data%</div>';
 var HTMLpublicationJournal = '<div class="date-text">%data%</div>';
 var HTMLpublicationImage = '<div class="row"><div class="col-sm-4"><img src="%data%" class="img-responsive patent"></div>';
-var HTMLpublicationDescription = '<div class="col-sm-7 summary text-left"><p>%data%</p></div></div>';
+var HTMLpublicationDescription = '<div class="col-sm-7 summary text-left"><p align="justify class="pad-top"">%data%</p></div></div>';
 
 var HTMLpatentStart = '<div class="patent-entry text-center"></div>';
 var HTMLpatentTitle = '<div class="bold text-center">%data%</div>';
@@ -41,7 +41,7 @@ var HTMLpatentAuthors = '<div class="italic">%data%</div>';
 var HTMLpatentJournal = '<div>%data%</div>';
 var HTMLpatentDocket = '<div>filed as docket %data% in %location%</div>';
 var HTMLpatentImage = '<div class="row"><div class="col-sm-4"><img src="%data%" class="img-responsive patent"></div>';
-var HTMLpatentDescription = '<div class="col-sm-7 summary text-left"><p>%data%</p></div></div>';
+var HTMLpatentDescription = '<div class="col-sm-7 summary text-left"><p align="justify class="pad-top"">%data%</p></div></div>';
 
 var HTMLawardStart = '<div class="award-entry distance"></div>';
 var HTMLawardTitle = '<div class="award"> %data%</div>';
@@ -56,7 +56,7 @@ var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolTitle = '%data%';
 var HTMLschoolImage = '<div class="row"><div class="col-sm-5"><img src="%data%" class="img-responsive patent"></div>';
-var HTMLschoolSummary = '<div class="col-sm-6"><p><div class="bold">Thesis title:</div>%data%</p></div></div>';
+var HTMLschoolSummary = '<div class="col-sm-6"><p align="right" class="pad-top"><span class="bold">Thesis title:</span>%data%</p></div></div>';
 
 var HTMLonlineClasses = '<div class="course-entry distance"></div>';
 var HTMLonlineTitle = '<a href="%href%">%data%';
