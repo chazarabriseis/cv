@@ -25,13 +25,6 @@ var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p align="justify">%data%</p>';
 
-var HTMLmemberStart = '<div class="work-entry"></div>';
-var HTMLmemberEmployer = '<a href="%href%">%data%</a>';
-var HTMLmemberTitle = ' - %data%';
-var HTMLmemberDates = '<div class="date-text">%data%</div>';
-var HTMLmemberLocation = '<div class="location-text">%data%</div>';
-var HTMLmemberDescription = '<p align="justify">%data%</p>';
-
 var HTMLpublicationStart = '<div class="publication-entry text-center"></div>';
 var HTMLpublicationTitle = '<hr><a href="%href%" class="bold text-center">%data%</a>';
 var HTMLpublicationDates = '<div>%data%</div>';
@@ -101,12 +94,8 @@ function locationFinder() {
        locations.push(school.location);
      });
 
-    julia.studentPlacement.forEach(function(school){
+     julia.studentPlacement.forEach(function(school){
        locations.push(school.location);
-     });
-
-    julia.volunteer.forEach(function(position){
-       locations.push(position.location);
      });
 
      julia.work.forEach(function(job){
@@ -210,7 +199,7 @@ map.fitBounds(mapBounds);
 //Carousel stuff
 // invoke the carousel
 $('#myCarousel').carousel({
-  interval: 60000
+  interval: 30000
 });
 
 /* SLIDE ON CLICK */ 

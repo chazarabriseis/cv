@@ -196,6 +196,11 @@ var julia = {
 		"school":"Udacity",
 		"name": "Web Development"
 	}, {
+		"date": "July 2016",
+		"school": "",
+		"website": "http://medialab.futureearth.org/anthronaut/melbourne/",
+		"name": "VR Hackathon on urban sustainability in Melbourne"
+	}, {
 		"date": "June 2016",
 		"website":"https://www.udacity.com/course/software-development-process--ud805",
 		"school":"Udacity",
@@ -314,7 +319,8 @@ var julia = {
 		"volume": "3",
 		"year": "2012",
 		"website": "http://www.nature.com/articles/ncomms2289",
-		"summary": "This study presents a two-stage process for fabricating well-defined and highly symmetric, 3D gold nanocrystal structures, including tetrahedra, 3D pentamers and 3D hexamers. Polarized scattering spectra are used to elucidate the plasmon modes present in each structure, and these are compared with computational models. We conclude that self-assembly of highly symmetric, polarization-independent structures with interparticle spacings of order 0.5 nm can now be fabricated.",	"image": "images/publication/GNP.jpg",
+		"summary": "This study presents a two-stage process for fabricating well-defined and highly symmetric, 3D gold nanocrystal structures, including tetrahedra, 3D pentamers and 3D hexamers. Polarized scattering spectra are used to elucidate the plasmon modes present in each structure, and these are compared with computational models. We conclude that self-assembly of highly symmetric, polarization-independent structures with interparticle spacings of order 0.5 nm can now be fabricated.",	
+		"image": "images/publication/GNP.jpg",
 		"comment": ""
 	}, {
 		"title": "Effect of different atmosphere on the QD luminescence",
@@ -323,8 +329,8 @@ var julia = {
 		"volume": "submitted",
 		"year": "",
 		"website": "",
-		"summary": "",
-		"image": "",
+		"summary": "The photo-luminescence properties of CdSe/CdS/ZnS quantum dots are highly dependent on their environment. Herein, we investigate the effects of controlled water vapour on the QD PL prior as well as during photo-excitation in both the presence and absence of oxygen using a wide-field setup with a gas-controlled sample chamber.",
+		"image": "images/publication/ATMOS.png",
 		"comment": ""
 	}, {
 		"title": "Nanosensors for next generation drug screening",
@@ -351,8 +357,9 @@ var julia = {
 		"journal": "Nanoscale",
 		"volume": "submitted",
 		"year": "",
-		"website": "",
-		"summary": "The free energy associated with transferring a set of fullerene particles through a finite water layer is calculated using explicit solvent molecular dynamic simulations. The particles considered in- clude single-shelled (single-wall) and multi-shelled (nano-onion) fullerenes ranging from 6 to 28 Å in radius. Corresponding changes in energy suggest a stronger affinity of carbon nano-onions for water compared to their single-shelled analogues.",	"image": "images/publication/FWI.png",
+		"website": "http://pubs.rsc.org/en/Content/ArticleLanding/2016/NR/C6NR06475B#!divAbstract",
+		"summary": "The free energy associated with transferring a set of fullerene particles through a finite water layer is calculated using explicit solvent molecular dynamic simulations. The particles considered in- clude single-shelled (single-wall) and multi-shelled (nano-onion) fullerenes ranging from 6 to 28 Angstrom in radius. Corresponding changes in energy suggest a stronger affinity of carbon nano-onions for water compared to their single-shelled analogues.",	
+		"image": "images/publication/FWI.png",
 		"comment": ""
 	}],
 
@@ -501,7 +508,7 @@ var julia = {
 		"title": "Young Nanoscience Ambassador Award",
 		"awarder": "Australian Nanotechnology Network",
 		"summary": "PhD student Julia Baldauf of the Mulvaney Group won the Victorian Young Nanotechnology Ambassador Award given by the Australian Nanotechnology Network for her enthusiastic involvement in promoting science and science education. Julia has been actively engaged in outreach activities including visits to metropolitan and regional schools to inspire students about nanotechnology and more broadly science education. ",
-	"website":"http://www.ausnano.net/content/young_ambass_awards"
+		"website":"http://www.ausnano.net/content/young_ambass_awards"
 	}, {
 		"date": "June 2011",
 		"title": " Overseas Research Experience Scholarship",
@@ -550,178 +557,141 @@ var julia = {
 			"startDate": "October 2016",
 			"organization": "Pollinate Energy",
 			"website": "https://pollinateenergy.org/our-programs/pf/",
-			"endDate": "",
 			"summary": "",
 			"location": "Lucknow, India",
 			"position": "Professional Fellowship"
 		}, {
-			"startDate": "September 2016",
-			"organization": "Organised IBM Research’s involvement at EXITE Camp",
+			"startDate": "September 2016, 2015, 2014",
+			"organization": "IBM",
 			"website": "http://www.clarendon.vic.edu.au/wp-content/uploads/IBM-EXITE-Camp-2016-Information-1.pdf",
-			"endDate": "",
 			"summary": "",
-			"location": "",
-			"position": ""
+			"location": "Melbourne, Australia",
+			"position": "Organised IBM Research’s involvement at EXITE Camp"
 		}, {
-			"startDate": "July 2016",
-			"organization": "Joined VR Hackathon on urban sustainability in Melbourne",
-			"website": "http://medialab.futureearth.org/anthronaut/melbourne/",
-			"endDate": "",
-			"summary": "",
-			"location": "",
-			"position": ""
-		}, {
-			"startDate": "January 2016",
-			"organization": "Volunteer for “ICT in schools” program",
+			"startDate": "January - December 2016",
+			"organization": "CSIRO",
 			"website": "http://www.scientistsinschools.edu.au/ICT/",
-			"endDate": "",
 			"summary": "",
-			"location": "",
-			"position": ""
+			"location": "Melbourne, Australia",
+			"position": "Volunteer for “ICT in schools” program"
 		}, {
 			"startDate": "October 2015",
-			"organization": "Helped organising a ‘Second to give’ fundraiser event",
+			"organization": "Seconds to give",
 			"website": "http://www.secondstogive.org/",
 			"endDate": "",
 			"summary": "",
-			"location": "",
-			"position": ""
-		}, {
-			"startDate": "September 2015",
-			"organization": "Organised IBM Research’s involvement at the EXITE Camp",
-			"website": "http://www.clarendon.vic.edu.au/wp-content/uploads/IBM-Ballarat-EXITE-Camp-Flyer-2015.pdf",
-			"endDate": "",
-			"summary": "",
-			"location": "",
-			"position": ""
-		}, {
+			"location": "Melbourne, Australia",
+			"position": "Organising a fundraiser event"
+		},  {
 			"startDate": "April 2015",
-			"organization": "Volunteer in Nepal for Journey to Nepal Organisation",
+			"organization": "Journey to Nepal",
 			"website": "http://www.journey-nepal.org/Nepal/",
 			"endDate": "",
 			"summary": "",
-			"location": "",
-			"position": ""
+			"location": "Kathmandu, Nepal",
+			"position": "Volunteer in Nepal"
 		}, {
-			"startDate": "May2014/May 2015",
-			"organization": "Volunteer for Foundation of Young Australians",
+			"startDate": "May 2014, 2015",
+			"organization": "Foundation of Young Australians",
 			"website": "http://www.fya.org.au/",
 			"endDate": "",
 			"summary": "",
-			"location": "",
-			"position": ""
-		}, {
-			"startDate": "September 2014",
-			"organization": "Presented at the IBM EXITE Camp",
-			"website": "http://www-07.ibm.com/employment/au-en/diversity/women.html",
-			"endDate": "",
-			"summary": "",
-			"location": "",
-			"position": ""
+			"location": "Melbourne, Australia",
+			"position": "Speed mentoring of highschool students"
 		}, {
 			"startDate": "November 2013",
-			"organization": "Volunteer for Residential Indigenous Science Experience",
+			"organization": "Residential Indigenous Science Experience",
 			"website": "http://www.gtac.edu.au/rise/",
 			"endDate": "",
 			"summary": "",
-			"location": "",
-			"position": ""
+			"location": "Melbourne, Australia",
+			"position": "Presenter and speed mentor"
 		}, {
 			"startDate": "June 2011",
-			"organization": "Volunteer at BIO21 Open Day (Nanotechnology Stand)",
-			"website": "",
+			"organization": "BIO21",
+			"website": "http://www.bio21.unimelb.edu.au/",
 			"endDate": "",
 			"summary": "",
-			"location": "",
-			"position": ""
+			"location": "Melbourne, Australia",
+			"position": "Volunteer at Open Day (Nanotechnology Stand)"
 		}, {
 			"startDate": "October 2011 - 2013",
-			"organization": "Volunteer for “Scientist in Schools Program” of CSIRO",
+			"organization": "CSIRO",
 			"website": "http://www.scientistsinschools.edu.au/",
 			"endDate": "",
 			"summary": "",
-			"location": "",
-			"position": ""
+			"location": "Melbourne, Australia",
+			"position": "Volunteer for “Scientist in Schools Program”"
 		}, {
 			"startDate": "September 2011",
-			"organization": "Organizer of a Careers Expo for undergraduate students",
+			"organization": "University of Melbourne",
 			"website": "",
 			"endDate": "",
 			"summary": "",
-			"location": "",
-			"position": ""
+			"location": "Melbourne, Australia",
+			"position": "Organizer of a Careers Expo for undergraduate students"
+		},{
+			"startDate": "June & October 2010",
+			"organization": "School of Chemistry Retreat",
+			"website": "",
+			"endDate": "",
+			"summary": "",
+			"location": "Melbourne, Australia",
+			"position": "Postgraduate Student Representative"
 		}, {
+			"startDate": "August 2010",
+			"organization": "University of Melbourne",
+			"website": "",
+			"endDate": "",
+			"summary": "",
+			"location": "Melbourne, Australia",
+			"position": "Volunteer at Open Day "
+		}, {
+			"startDate": "August 2010",
+			"organization": "Herald Sun Home and Garden Expo",
+			"website": "",
+			"endDate": "",
+			"summary": "",
+			"location": "Melbourne, Australia",
+			"position": "Representative at Nanotechnology stand"
+		}
+	],
+
+	"members":[ {
 			"startDate": "April 2011 - April 2012",
-			"organization": "President - Chemistry Postgraduate Society",
+			"organization": "Chemistry Postgraduate Society",
 			"website": "http://chemistry.unimelb.edu.au/engage/chemistry-postgraduate-society-cps",
-			"endDate": "",
 			"summary": "",
 			"location": "",
-			"position": ""
-		}, {
-			"startDate": "October 2010",
-			"organization": "Postgraduate Student Representative at School of Chemistry Retreat",
-			"website": "",
-			"endDate": "",
-			"summary": "",
-			"location": "",
-			"position": ""
-		}, {
-			"startDate": "August 2010",
-			"organization": "Volunteer at Open Day of the University of Melbourne",
-			"website": "",
-			"endDate": "",
-			"summary": "",
-			"location": "",
-			"position": ""
-		}, {
-			"startDate": "August 2010",
-			"organization": "Representative at Nanotechnology stand at Herald Sun Home and Garden Expo",
-			"website": "",
-			"endDate": "",
-			"summary": "",
-			"location": "",
-			"position": ""
-		}, {
-			"startDate": "June 2010",
-			"organization": "Postgraduate Student Representative at School of Chemistry Planning Day",
-			"website": "",
-			"endDate": "",
-			"summary": "",
-			"location": "",
-			"position": ""
+			"position": "President"
 		}, {
 			"startDate": "May 2010",
-			"organization": "Australian Nanotechnology Network Member",
+			"organization": "Australian Nanotechnology Network",
 			"website": "http://www.ausnano.net/index.php?page=home",
-			"endDate": "",
 			"summary": "",
 			"location": "",
-			"position": ""
+			"position": "Member"
 		}, {
 			"startDate": "April 2010 - April 2011",
-			"organization": "Treasurer - Chemistry Postgraduate Society",
+			"organization": "Chemistry Postgraduate Society",
 			"website": "http://chemistry.unimelb.edu.au/engage/chemistry-postgraduate-society-cps",
-			"endDate": "",
 			"summary": "",
 			"location": "",
-			"position": ""
+			"position": "Treasurer"
 		}, {
 			"startDate": "August 2009 - April 2012",
-			"organization": "Chemistry Postgraduate Society Member",
+			"organization": "Chemistry Postgraduate Society",
 			"website": "http://chemistry.unimelb.edu.au/engage/chemistry-postgraduate-society-cps",
-			"endDate": "",
 			"summary": "",
 			"location": "",
-			"position": ""
+			"position": "Member"
 		}, {
-			"startDate": "February 2007",
-			"organization": "Deutsche Physikalische Gesellschaft Member",
+			"startDate": "since February 2007",
+			"organization": "Deutsche Physikalische Gesellschaft",
 			"website": "https://www.dpg-physik.de/index.html?lang=en",
-			"endDate": "",
 			"summary": "",
 			"location": "",
-			"position": ""
+			"position": "Member"
 		}
 
 	],
@@ -938,6 +908,22 @@ for (job in work) {
 	}
 }
 displayVolunteerWork(julia.volunteer);	
+
+function displayMember(members) {
+for (job in members) {
+	$('#members').append(HTMLmemberStart);
+	var formattedEmp = HTMLmemberEmployer.replace("%data%",julia.members[job].organization);
+	var formattedEmphref = formattedEmp.replace("%href%",julia.members[job].website);
+	var formattedTitle = HTMLmemberTitle.replace("%data%",julia.members[job].position);
+	var formattedDate = HTMLmemberDates.replace("%data%",julia.members[job].startDate);
+	var formattedDes = HTMLmemberDescription.replace('%data%',julia.members[job].summary)
+	var formattedEmpTitle = formattedEmphref + formattedTitle
+	$('.work-entry:last').append(formattedEmpTitle);
+	$('.work-entry:last').append(formattedDate);
+	$('.work-entry:last').append(formattedDes);
+	}
+}
+displayMember(julia.members);	
 
 function displayEducation(schools) {
 for (school in schools) {

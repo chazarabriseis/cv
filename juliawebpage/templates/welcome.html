@@ -3,48 +3,31 @@
 {% block content %}
   
 <div class="row">
-  <div class="col-sm-6 diary-box">
-    <br>
-    JB^2 Travel Diary
-    <br>
-    <a href="/diary">Diary</a>
+  <div class="col-sm-6 diary-box" onclick="location.href='/diary';">
+    JB<span class=sup>2</span> Travel Diary
   </div>
-  <div class="col-sm-6 blog-box">
-  <br>
-    Guestbook
-    <br>
-  <a href="/blog">Blog</a>
+  <div class="col-sm-6 cv-box" onclick="location.href='/resume';">
+    Julia's Resume
   </div>
 </div>
 
 <div class="row">
-  <div class="col-sm-6 cup-box">
-    <br>
-    Take away Craziness
-    <br>
-    <a href="/cup">TAC</a>
+  <div class="col-sm-6 blog-box" onclick="location.href='/blog';">
+    Guestbook
   </div>
-  <div class="col-sm-6 cv-box">
-    <br>
-    Julia's Resume
-    <br>
-    <a href="/resume">CV</a>
+  <div class="col-sm-6 cup-box" onclick="location.href='/cup';">
+    Take away Craziness
   </div>
 
 </div>
 
-
-
-
 <div class="row text-center">
-  <div class="col-sm-12">
+  <div class="col-sm-12 quote italic">
     <hr>
     <h4>Happiness is a choice - we don't need to wait for everything to be perfectly aligned. 
     <br>Let's find happiness in any moment!</h4>
     <hr>
   </div>
 </div>
-
-
 
 {% endblock %}

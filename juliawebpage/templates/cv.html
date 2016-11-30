@@ -12,17 +12,16 @@
   <body>
   <div class="container-fluid">
 
-  <div class="navbar navbar-inverse navbar-fixed-top navbarjulia">
+  <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbarheaderjulia" href="#header_pic">
           Julia Baldauf - Curriculum Vitae 
-        </a>
       </div>
-      <ul class="nav navbar-nac pull-right">
-        <li><a class="href_nav" href="/static/docs/CV_JB_latest.pdf" download>Download CV</a></li>
-        <li><a class="href_nav" href="#contact">Contact me</a></li>
-      </ul>
+      <div class="text-right">
+        <a class="href_nav" href="/static/docs/CV_JB_latest.pdf" download>Download CV</a>
+        <br>
+        <a class="href_nav" href="#contact">Contact me</a>
+      </div>
     </div>
   </div>
 
@@ -38,14 +37,15 @@
     <div class="col-sm-12 text-center">
     <ol class="carousel-linked-nav pagination">
       <li class="active"><a href="#1">Work Experience & Education</a></li>
-      <li><a href="#2">Student Placements & Volunteer Work</a></li>
-      <li><a href="#3">Publications & Patents</a></li>
+      <li><a href="#2">Publications & Patents</a></li>
+      <li><a href="#3">Student Placements & Volunteer Work</a></li>
       <li><a href="#4">Awards & Professional Development</a></li>
+      <li><a href="#5">Memberships</a></li>
     </ol>
     </div>
     </div>
 
-    <div class="row main_body1">
+    <div class="row main_body1 bold">
     <div class="col-sm-12 text-center">
     <div id="myCarousel" class="carousel slide">
     <!-- Carousel items -->
@@ -64,11 +64,11 @@
 
     <div class="item">
     <div class="row main_body1">  
-      <div id="studentPlacement" class="col-sm-6">
-        <h2>Student Placements</h2>
+      <div id="publication" class="col-sm-6">
+        <h2>Publications</h2>
       </div>
-      <div id="volunteerWork" class="col-sm-6">
-        <h2>Volunteer Work</h2>
+      <div id="patent" class="col-sm-6">
+        <h2>Patents</h2>
       </div>
     </div>
     </div>
@@ -76,11 +76,11 @@
 
     <div class="item">
     <div class="row main_body1">  
-      <div id="publication" class="col-sm-6">
-        <h2>Publications</h2>
+      <div id="studentPlacement" class="col-sm-6">
+        <h2>Student Placements</h2>
       </div>
-      <div id="patent" class="col-sm-6">
-        <h2>Patents</h2>
+      <div id="volunteerWork" class="col-sm-6">
+        <h2>Volunteer Work</h2>
       </div>
     </div>
     </div>
@@ -92,6 +92,17 @@
       </div>
       <div id="courses" class="col-sm-6">
         <h2>Professional Development</h2>
+      </div>
+    </div>
+    </div>
+
+    <div class="item">
+    <div class="row main_body1">  
+      <div id="members" class="col-sm-6">
+        <h2>Memberships</h2>
+      </div>
+      <div id="" class="col-sm-6">
+        <h2></h2>
       </div>
     </div>
     </div>
@@ -132,16 +143,18 @@
     </div>
 
     <div class="row main_body1">
-     <div id="mapDiv" class="col-sm-12">
-      <h2>Where I've Lived and Worked</h2>
-      <div class = "fixedheight" id="map"></div> 
+      <div id="mapDiv" class="col-sm-12">
+        <h2>Where I've Lived and Worked</h2>
+        <div class = "fixedheight" id="map">
+        </div> 
+      </div>
     </div>
-  </div>
+
 
  <!-- Modal --> 
  <div class="modal fade" id="ComputationalSkills" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
   <div class="modal-dialog"> 
-    <div class="modal-content compskill-background"> 
+    <div class="modal-content compskill-background bold"> 
       <div class="modal-header"> 
         <h4 class="modal-title" id="ComputationalSkills">Computational Skills</h4> 
       </div> 
@@ -156,7 +169,7 @@
 
  <div class="modal fade" id="ExperimentalSkills" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
   <div class="modal-dialog"> 
-    <div class="modal-content expskill-background"> 
+    <div class="modal-content expskill-background bold"> 
       <div class="modal-header"> 
         <h4 class="modal-title" id="ExperimentalSkills">Experimental Skills</h4> 
       </div> 
@@ -172,7 +185,7 @@
 
   <div class="modal fade" id="TransferableSkills" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
   <div class="modal-dialog"> 
-    <div class="modal-content transfskill-background"> 
+    <div class="modal-content transfskill-background bold"> 
       <div class="modal-header"> 
         <h4 class="modal-title" id="TransferableSkills">Transferable Competencies</h4> 
       </div> 
@@ -185,7 +198,8 @@
   </div> 
  </div>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXaQnC9eWVVMrYql3kLR3oAdGQ9NrYrwk&libraries=places"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCq3GQW_N2--Ldh45UNmEZUZpvRQna7AWQ&libraries=places"
+  type="text/javascript"></script>
   <script type="text/javascript" src="js/jquery-2.2.4.js"></script> 
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script src="/js/resume_helper.js"></script>
