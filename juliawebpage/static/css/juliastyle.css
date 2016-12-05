@@ -69,6 +69,17 @@ body {
   height: 500px;
 }
 
+.fixedheight_small {
+  height: 100px;
+  padding: 5px;
+}
+.fixedheight_small_right {
+  position: absolute;
+  right: 15px;
+  height: 100px;
+  width: 200px;
+}
+
 .skillbox {
   margin-left: 20px;
   margin-right: 20px;
@@ -76,6 +87,9 @@ body {
   margin-bottom: 5px;
 }
 
+.skillbox:hover {
+  background-color: #F8EEE7;
+}
 .thumbnail:hover {
   color: black;
   font-weight: bold;
@@ -124,7 +138,7 @@ body {
 }
 
 .transfskill-background {
-    background-image: url("/images/transfskill.jpg");
+    background-image: url("/images/resume/transfskill.jpg");
     color: #301934;
 
 }
@@ -136,12 +150,12 @@ body {
 
 
 .expskill-background {
-    background-image: url("/images/expskill.jpg");
+    background-image: url("/images/resume/expskill.jpg");
     color: #FFF;
 }
 
 .compskill-background {
-    background-image: url("/images/compskill.jpg");
+    background-image: url("/images/resume/compskill.jpg");
     color: #FFF;
 }
 
@@ -154,7 +168,7 @@ body {
   font-size: 55px;
   text-shadow: white 0px 0px 2px;
   border: solid 2px;
-  background-image: url("/images/panorama.jpg");
+  background-image: url("/images/welcome/panorama.jpg");
   background-repeat:no-repeat;
   background-size:contain;
   background-position:center;
@@ -208,9 +222,27 @@ filter: alpha(opacity=100)
     color: red
 }
 
+.diary-topbox1 {
+  background-image: url("/images/welcome/diary.png");
+  background-position: center; 
+  color: #FFFEFF;
+  padding:10px;
+  height: 80px;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  background-size: cover;
+}
+
+.diary-topbox2 {
+  background-image: url("/images/blog/1/img_1.jpg");
+  background-position: 0px 130px; 
+  height: 80px;
+  background-size: cover;
+}
+
 .diary-box {
-  background:  linear-gradient(#6AA2DB,#9DD7FC);
-  background-image: url("/images/diary.png");
+  background-image: url("/images/welcome/diary.png");
   background-position: center; 
   color: #FFFEFF;
   border-radius: 25px;
@@ -220,11 +252,11 @@ filter: alpha(opacity=100)
   line-height: 60px;
   font-size: 20px;
   font-weight: bold;
+  background-size: 100% 100%;
 }
 
 .blog-box {
-  background:  linear-gradient(#EDECEA,#5C5A27);
-  background-image: url("/images/blog.png");
+  background-image: url("/images/welcome/blog.png");
   background-position: center; 
   color: #FFFEFF;
   border-radius: 25px;
@@ -234,11 +266,11 @@ filter: alpha(opacity=100)
   line-height: 60px;
   font-size: 20px;
   font-weight: bold;
+  background-size: 100% 100%;
 }
 
 .cup-box {
-  background:  linear-gradient(#322D29,#645E2A);
-  background-image: url("/images/cup.png");
+  background-image: url("/images/welcome/cup.png");
   background-position: center; 
   color: #FFFEFF;
   border-radius: 25px;
@@ -248,11 +280,11 @@ filter: alpha(opacity=100)
   line-height: 60px;
   font-size: 20px;
   font-weight: bold;
+  background-size: 100% 100%;
 }
 
 .cv-box {
-  background:  linear-gradient(#665D78,#3E394F);
-  background-image: url("/images/cv.png");
+  background-image: url("/images/welcome/cv.png");
   background-position: center; 
   color: #F8EEE7;
   border-radius: 25px;
@@ -262,6 +294,7 @@ filter: alpha(opacity=100)
   line-height: 60px;
   font-size: 20px;
   font-weight: bold;
+  background-size: 100% 100%;
 }
 
 .cv-box:hover {
@@ -447,3 +480,37 @@ hr {
   border-color: #dddddd;
   cursor: not-allowed;
 }
+
+.gallery-height {
+  height: 200px;
+  -webkit-filter: grayscale(1);
+  cursor: pointer;
+}
+
+.gallery-height:hover {
+  -webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+ #scroller {
+      position: relative;
+  }
+  #scroller .innerScrollArea {
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+  }
+  #scroller ul {
+      padding: 0;
+      margin: 0;
+      position: relative;
+  }
+  #scroller li {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      position: absolute;
+  }

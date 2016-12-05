@@ -1,8 +1,8 @@
 var julia = {
 	"basics": {
-		"name": "Julia Baldauf",
+		"name": "Dr. Julia S. Baldauf",
 		"label": "Physicist",
-		"picture": "/images/julia_pic.jpg",
+		"picture": "/images/resume/julia_pic.jpg",
 		"email": "julia.s.baldauf@gmail.com",
 		"phone": "+61 (0) 435 - 340 350",
 		"website": "",
@@ -117,7 +117,7 @@ var julia = {
 	"education": [{
 		"institution": "University of Melbourne",
 		"location": "Melbourne, Australia",
-		"image" : "images/doktorarbeit.png",
+		"image" : "images/resume/doktorarbeit.png",
 		"area": "Physical Chemistry",
 		"group": "Nanoparticle Group",
 		"supervisor": "Prof. Mulvaney",
@@ -131,7 +131,7 @@ var julia = {
 	}, {
 		"institution": "Ludwig-Maximillians University",
 		"location": "Munich, Germany",
-		"image" : "images/diplomarbeit.png",
+		"image" : "images/resume/diplomarbeit.png",
 		"area": "Physics",
 		"group": "Photonics and Optoelectronics Group",
 		"website": "http://www.phog.physik.lmu.de/",
@@ -697,11 +697,11 @@ var julia = {
 	],
 
 	"skillImages": [{
-				"image": "/images/compskill.jpg"
+				"image": "/images/resume/compskill.jpg"
 			},{
-				"image": "/images/expskill.jpg"
+				"image": "/images/resume/expskill.jpg"
 			},{
-				"image": "/images/transfskill.jpg"
+				"image": "/images/resume/transfskill.jpg"
 			}],
 
 	"skills": [{
@@ -813,13 +813,6 @@ function asign(HTML_str,data) {
 
 $('#header').append(asign(HTMLheaderName,julia.basics.name));
 $('#header').append(asign(HTMLheaderRole,julia.basics.label));
-//$('#header').append(asign(HTMLcontactGeneric, ));
-//$('#header').append(asign(HTMLmobile, ));
-//$('#header').append(asign(HTMLemail,julia.basics.email));
-//$('#header').append(asign(HTMLtwitter, ));
-//$('#header').append(asign(HTMLgithub, bjulia.basics.github));
-//$('#header').append(asign(HTMLblog, ));
-//$('#header').append(asign(HTMLlocation, ));
 $('#header_pic').append(asign(HTMLbioPic, julia.basics.picture));
 $('#header').append(asign(HTMLwelcomeMsg, julia.basics.summary));
 
