@@ -1,3 +1,6 @@
+application: juliawebpage
+version: 1
+
 $("#mapDiv").append(googleMap);
 
 
