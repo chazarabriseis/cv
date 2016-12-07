@@ -3,23 +3,20 @@ var HTMLdiaryStart = '<div class="diary-entry"></div>';
 var HTMLdiaryTitle = '<div class="col-sm-6 text-center"><p align="justify class="pad-top""><h2>%data%</h2></p></div>';
 var HTMLdiaryText = '<div class = "row"> <div class = col-sm-12><p align="justify">%data%</p></div></div>';
 
-//function HTMLgalleryStart(index) {
-//  return '<div class = "row"> <div class = "col-sm-12"><div class = "scroller" id="scroller-'+index+' " style="height: 200px; margin: 0 auto;"> <div class="innerScrollArea-'+index+' innerScrollerArea"> <ul>';
-//}
+function HTMLgalleryStart(index) {
+  return '<div class = "row"> <div class = col-sm-12><div id="scroller-'+index+' " style="height: 200px; margin: 0 auto;"> <div class="innerScrollArea-'+index+' "> <ul>';
+}
 
-var HTMLgalleryStart = '<div class = "row"> <div class = "col-sm-12"><div id="scroller"> <div class="innerScrollArea">';
-
-//var HTMLgalleryImageLS = '<li> <img class="gallery-height" src="%data%" height="200" width="356"/>';
-//var HTMLgalleryImagePT = '<li> <img class="gallery-height" src="%data%" height="200" width="131"/>';
-var HTMLgalleryImageLS = '<img class="gallery-height" src="%data%"/>';
-var HTMLgalleryImagePT = '<img class="gallery-height" src="%data%"/>';
+var HTMLgalleryImageLS = '<li> <img class="gallery-height" src="%data%" height="200" width="356"/>';
+var HTMLgalleryImagePT = '<li> <img class="gallery-height" src="%data%" height="200" width="131"/>';
 
 var HTMLdiaryImage = '<div class="row"><div class="col-sm-3"><img src="%data%" class="img-responsive fixedheight_small"></div>';
 var HTMLdiaryDate = '<div class="row"><div class="col-sm-12 text-right">%data%</div><hr>';
 
-//function HTMLdiaryMap(index) {
+function HTMLdiaryMap(index) {
 //  return '<div id="mapDiv" class="col-sm-3"><div class="fixedheight_small_right" id="map-'+index+' "></div> </div></div>';}
-  
+  return '<div id="mapDiv" class="col-sm-3"><div class="fixedheight_small_right" id=""></div> </div></div>';}
+
 
 // //Create a google map that shows all locations
 // var map;    // declares a global map variable

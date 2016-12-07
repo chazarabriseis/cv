@@ -24,7 +24,7 @@ function asign(HTML_str,data) {
 	return HTML_new
 };
 
-//var mapLocation;
+var mapLocation;
 
 function displayDiary(entries) {
 var index = -1;
@@ -33,16 +33,15 @@ for (entry in entries) {
 	$('#diary').append(HTMLdiaryStart);
 	var formattedImage = asign(HTMLdiaryImage,diary.entry[entry].coverimage);
 	var formattedTitle = asign(HTMLdiaryTitle,diary.entry[entry].title);
-	//var formattedMap = HTMLdiaryMap(index);
-	var formattedMap = "";
+	var formattedMap = HTMLdiaryMap(index);
 	var combined = formattedImage+formattedTitle+formattedMap;
 	$('.diary-entry:last').append(asign(HTMLdiaryDate,diary.entry[entry].date));
 	$('.diary-entry:last').append(combined);
-	//mapLocation = diary.entry[index].location;
+
+	mapLocation = diary.entry[index].location;
 
 	$('.diary-entry:last').append(asign(HTMLdiaryText,diary.entry[entry].text));
-	//var galleryCombined = HTMLgalleryStart(index);
-	var galleryCombined = HTMLgalleryStart;
+	var galleryCombined = HTMLgalleryStart(index);
 	for (image in diary.entry[entry].images_landscape) {
 			galleryCombined = galleryCombined + asign(HTMLgalleryImageLS,diary.entry[entry].images_landscape[image]);
 		}

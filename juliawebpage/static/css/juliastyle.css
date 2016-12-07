@@ -227,7 +227,7 @@ filter: alpha(opacity=100)
   background-position: center; 
   color: #FFFEFF;
   padding:10px;
-  height: 80px;
+  height: 100px;
   line-height: 60px;
   font-size: 20px;
   font-weight: bold;
@@ -236,8 +236,8 @@ filter: alpha(opacity=100)
 
 .diary-topbox2 {
   background-image: url("/images/blog/1/img_1.jpg");
-  background-position: 0px 130px; 
-  height: 80px;
+  background-position: 0px 190px; 
+  height: 100px;
   background-size: cover;
 }
 
@@ -496,12 +496,15 @@ hr {
       position: relative;
   }
   #scroller .innerScrollArea {
-      overflow: hidden;
-      position: absolute;
+      /* overflow: hidden; 
+      position: absolute; 
       left: 0;
       right: 0;
       top: 0;
-      bottom: 0;
+      bottom: 0; */
+      height: 600px;
+      width: 100%;
+      padding-bottom: 50px;
   }
   #scroller ul {
       padding: 0;
