@@ -24,7 +24,6 @@ function asign(HTML_str,data) {
 	return HTML_new
 };
 
-var mapLocation;
 
 function displayDiary(entries) {
 var index = -1;
@@ -38,9 +37,9 @@ for (entry in entries) {
 	$('.diary-entry:last').append(asign(HTMLdiaryDate,diary.entry[entry].date));
 	$('.diary-entry:last').append(combined);
 
-	mapLocation = diary.entry[index].location;
-	console.log(mapLocation);
-	initializeMap(index);
+	//mapLocation = diary.entry[index].location;
+	//console.log(mapLocation);
+	initializeMap(index,diary.entry[index].location);
 
 	$('.diary-entry:last').append(asign(HTMLdiaryText,diary.entry[entry].text));
 	var galleryCombined = HTMLgalleryStart(index);

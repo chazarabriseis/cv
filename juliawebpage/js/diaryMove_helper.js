@@ -13,17 +13,17 @@ var HTMLgalleryImageLS = '<li> <img class="gallery-height" src="%data%" height="
 var HTMLgalleryImagePT = '<li> <img class="gallery-height" src="%data%" height="200" width="131"/>';
 
 var HTMLdiaryImage = '<div class="row"><div class="col-sm-3"><img src="%data%" class="img-responsive fixedheight_small"></div>';
-var HTMLdiaryDate = '<div class="row"><div class="col-sm-12 text-right">%data%</div><hr>';
+var HTMLdiaryDate = '<div class="row"><div class="col-sm-12 text-right" style="padding-top: 20px;">%data%</div><hr>';
 
 function HTMLdiaryMap(index) {
     return '<div class="col-sm-3"><div class="fixedheight_small_right" id="map-'+index+'"></div> </div></div>';}
 
 //////////////////////////////
 //Create a google map that shows locations for each entry
-var map;    // declares a global map variable
+    // declares a global map variable
 
-function initializeMap(index) {
-
+function initializeMap(index,mapLocation) {
+    var map;
     var locations;
 
     var mapOptions = {
@@ -33,7 +33,7 @@ function initializeMap(index) {
     console.log('#map-'+index)
     map = new google.maps.Map(document.querySelector('#map-'+index), mapOptions);
 
-    //Create a google map that shows all locations
+    //Create a google map that shows location
     function locationFinder() {
         var locations = [mapLocation];
         //locations.push(mapLocation);
@@ -115,6 +115,7 @@ function initializeMap(index) {
 
     // locations is an array of location strings returned from locationFinder()
     locations = locationFinder();
+    console.log(locations);
 
     // pinPoster(locations) creates pins on the map for each location in
     // the locations array
