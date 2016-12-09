@@ -1,10 +1,12 @@
+//////////////////////////////
+//Variables to help populate the diary
 var HTMLdiaryStart = '<div class="diary-entry"></div>';
 
 var HTMLdiaryTitle = '<div class="col-sm-6 text-center"><p align="justify class="pad-top""><h2>%data%</h2></p></div>';
 var HTMLdiaryText = '<div class = "row"> <div class = col-sm-12><p align="justify">%data%</p></div></div>';
 
 function HTMLgalleryStart(index) {
-  return '<div class = "row"> <div class = col-sm-12><div id="scroller-'+index+' " style="height: 200px; margin: 0 auto;"> <div class="innerScrollArea-'+index+' "> <ul>';
+    return '<div class = "row"> <div class = "col-sm-12"><div id="scroller-'+index+'" style = "position: relative; height: 200px; margin: 0 auto;"> <div class="innerScrollArea innerScrollArea-'+index+'"> <ul>';
 }
 
 var HTMLgalleryImageLS = '<li> <img class="gallery-height" src="%data%" height="200" width="356"/>';
@@ -14,163 +16,163 @@ var HTMLdiaryImage = '<div class="row"><div class="col-sm-3"><img src="%data%" c
 var HTMLdiaryDate = '<div class="row"><div class="col-sm-12 text-right">%data%</div><hr>';
 
 function HTMLdiaryMap(index) {
-//  return '<div id="mapDiv" class="col-sm-3"><div class="fixedheight_small_right" id="map-'+index+' "></div> </div></div>';}
-  return '<div id="mapDiv" class="col-sm-3"><div class="fixedheight_small_right" id=""></div> </div></div>';}
+    return '<div class="col-sm-3"><div class="fixedheight_small_right" id="map-'+index+'"></div> </div></div>';}
 
+//////////////////////////////
+//Create a google map that shows locations for each entry
+var map;    // declares a global map variable
 
-// //Create a google map that shows all locations
-// var map;    // declares a global map variable
+function initializeMap(index) {
 
-// function initializeMap(index) {
+    var locations;
 
-//    var locations;
+    var mapOptions = {
+        disableDefaultUI: true
+    };
 
-//    var mapOptions = {
-//      disableDefaultUI: true
-//    };
+    console.log('#map-'+index)
+    map = new google.maps.Map(document.querySelector('#map-'+index), mapOptions);
 
+    //Create a google map that shows all locations
+    function locationFinder() {
+        var locations = [mapLocation];
+        //locations.push(mapLocation);
+        console.log(locations);
+        return locations;
+    };
+    
 
-// map = new google.maps.Map(document.querySelector('#map-0'), mapOptions);
+    function createMapMarker(placeData) {
+        // The next lines save location data from the search result object to local variables
+        var lat = placeData.geometry.location.lat();  // latitude from the place service
+        var lon = placeData.geometry.location.lng();  // longitude from the place service
+        var name = placeData.formatted_address;   // name of the place from the place service
+        var bounds = window.mapBounds;            // current boundaries of the map window
 
-// //Create a google map that shows all locations
-// function locationFinder() {
-//   var locations = [];
-//   locations.push(mapLocation);
-//   return locations;
-//   };
+        // marker is an object with additional data about the pin for a single location
+        var marker = new google.maps.Marker({
+            map: map,
+            position: placeData.geometry.location,
+            title: name
+        });
 
-// function createMapMarker(placeData) {
-//     // The next lines save location data from the search result object to local variables
-//     var lat = placeData.geometry.location.lat();  // latitude from the place service
-//     var lon = placeData.geometry.location.lng();  // longitude from the place service
-//     var name = placeData.formatted_address;   // name of the place from the place service
-//     var bounds = window.mapBounds;            // current boundaries of the map window
+        // infoWindows are the little helper windows that open when you click
+        // or hover over a pin on a map. They usually contain more information
+        // about a location.
+        var infoWindow = new google.maps.InfoWindow({
+            content: name
+        });
 
-//     // marker is an object with additional data about the pin for a single location
-//     var marker = new google.maps.Marker({
-//       map: map,
-//       position: placeData.geometry.location,
-//       title: name
-//     });
+        // add the marker for each pin
+        google.maps.event.addListener(marker, 'click', function() {
+            infoWindow.open(map, marker)
+        });
 
-//     // infoWindows are the little helper windows that open when you click
-//     // or hover over a pin on a map. They usually contain more information
-//     // about a location.
-//     var infoWindow = new google.maps.InfoWindow({
-//       content: name
-//     });
+        // this is where the pin actually gets added to the map.
+        // bounds.extend() takes in a map location object
+        bounds.extend(new google.maps.LatLng(lat, lon));
+        // fit the map to the new marker
+        map.fitBounds(bounds);
+        // center the map
+        map.setCenter(bounds.getCenter());
+    }
 
-//     // hmmmm, I wonder what this is about...
-//     google.maps.event.addListener(marker, 'click', function() {
-//       // your code goes here!
-//       infoWindow.open(map, marker)
-//     });
+    /*
+    callback(results, status) makes sure the search returned results for a location.
+    If so, it creates a new map marker for that location.
+    */
+    function callback(results, status) {
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+            createMapMarker(results[0]);
+        }
+    }
 
-//     // this is where the pin actually gets added to the map.
-//     // bounds.extend() takes in a map location object
-//     bounds.extend(new google.maps.LatLng(lat, lon));
-//     // fit the map to the new marker
-//     map.fitBounds(bounds);
-//     // center the map
-//     map.setCenter(bounds.getCenter());
-//   }
+    /*
+    pinPoster(locations) takes in the array of locations created by locationFinder()
+    and fires off Google place searches for each location
+    */
+    function pinPoster(locations) {
 
-//   /*
-//   callback(results, status) makes sure the search returned results for a location.
-//   If so, it creates a new map marker for that location.
-//   */
-//   function callback(results, status) {
-//     if (status == google.maps.places.PlacesServiceStatus.OK) {
-//       createMapMarker(results[0]);
-//     }
-//   }
+        // creates a Google place search service object. PlacesService does the work of
+        // actually searching for location data.
+        var service = new google.maps.places.PlacesService(map);
 
-//   /*
-//   pinPoster(locations) takes in the array of locations created by locationFinder()
-//   and fires off Google place searches for each location
-//   */
-//   function pinPoster(locations) {
+        // Iterates through the array of locations, creates a search object for each location
+        locations.forEach(function(place){
+        // the search request object
+        var request = {
+            query: place
+        };
 
-//     // creates a Google place search service object. PlacesService does the work of
-//     // actually searching for location data.
-//     var service = new google.maps.places.PlacesService(map);
+        // Actually searches the Google Maps API for location data and runs the callback
+        // function with the search results after each search.
+        service.textSearch(request, callback);
+        });
+    }
 
-//     // Iterates through the array of locations, creates a search object for each location
-//       locations.forEach(function(place){
-//       // the search request object
-//       var request = {
-//         query: place
-//       };
+    // Sets the boundaries of the map based on pin locations
+    window.mapBounds = new google.maps.LatLngBounds();
 
-//       // Actually searches the Google Maps API for location data and runs the callback
-//       // function with the search results after each search.
-//       service.textSearch(request, callback);
-//     });
-//   }
+    // locations is an array of location strings returned from locationFinder()
+    locations = locationFinder();
 
-//   // Sets the boundaries of the map based on pin locations
-//   window.mapBounds = new google.maps.LatLngBounds();
+    // pinPoster(locations) creates pins on the map for each location in
+    // the locations array
+    pinPoster(locations);
+    
+    }
 
-//   // locations is an array of location strings returned from locationFinder()
-//   locations = locationFinder();
+// Calls the initializeMap() function when the page loads
+//window.addEventListener('load', initializeMap);
 
-//   // pinPoster(locations) creates pins on the map for each location in
-//   // the locations array
-//   pinPoster(locations);
+// Vanilla JS way to listen for resizing of the window
+// and adjust map bounds
+//window.addEventListener('resize', function(e) {
+  //Make sure the map bounds get updated on page resize
+//map.fitBounds(mapBounds);
+//});
 
-// }
-
-// // Calls the initializeMap() function when the page loads
-// window.addEventListener('load', initializeMap);
-
-// // Vanilla JS way to listen for resizing of the window
-// // and adjust map bounds
-// window.addEventListener('resize', function(e) {
-//   //Make sure the map bounds get updated on page resize
-// map.fitBounds(mapBounds);
-// });
-
+//////////////////////////////
+//Adds infinite scrolling to photobanner
 function gallery_maker(index) {
-        //var scroller = $('#scroller'+index' div.innerScrollArea'+index+'');
-        var scroller = $('#scroller-0 div.innerScrollArea-0');
-        var scrollerContent = scroller.children('ul');
-        console.log(scrollerContent);
-        scrollerContent.children().clone().appendTo(scrollerContent);
-        var curX = 0;
-        scrollerContent.children().each(function(){
-            var $this = $(this);
-            $this.css('left', curX);
-            curX += $this.outerWidth(true);
-        });
-        var fullW = curX / 2;
-        var viewportW = scroller.width();
+    var scroller = $('div#scroller-'+index+' div.innerScrollArea.innerScrollArea-'+index);
+    var scrollerContent = scroller.children('ul');
+    scrollerContent.children().clone().appendTo(scrollerContent);
+    var curX = 0;
+    scrollerContent.children().each(function(){
+        var $this = $(this);
+        $this.css('left', curX);
+        curX += $this.outerWidth(true);
+    });
+    var fullW = curX / 2;
+    var viewportW = scroller.width();
 
-        // Scrolling speed management
-        var controller = {curSpeed:0, fullSpeed:2};
-        var $controller = $(controller);
-        var tweenToNewSpeed = function(newSpeed, duration)
-        {
-            if (duration === undefined)
-                duration = 600;
-            $controller.stop(true).animate({curSpeed:newSpeed}, duration);
-        };
+    // Scrolling speed management
+    var controller = {curSpeed:0, fullSpeed:2};
+    var $controller = $(controller);
+    var tweenToNewSpeed = function(newSpeed, duration)
+    {
+        if (duration === undefined)
+            duration = 600;
+        $controller.stop(true).animate({curSpeed:newSpeed}, duration);
+    };
 
-        // Pause on hover
-        scroller.hover(function(){
-            tweenToNewSpeed(0);
-        }, function(){
-            tweenToNewSpeed(controller.fullSpeed);
-        });
-
-        // Scrolling management; start the automatical scrolling
-        var doScroll = function()
-        {
-            var curX = scroller.scrollLeft();
-            var newX = curX + controller.curSpeed;
-            if (newX > fullW*2 - viewportW)
-                newX -= fullW;
-            scroller.scrollLeft(newX);
-        };
-        setInterval(doScroll, 20);
+    // Pause on hover
+    scroller.hover(function(){
+        tweenToNewSpeed(0);
+    }, function(){
         tweenToNewSpeed(controller.fullSpeed);
+    });
+
+    // Scrolling management; start the automatical scrolling
+    var doScroll = function()
+    {
+        var curX = scroller.scrollLeft();
+        var newX = curX + controller.curSpeed;
+        if (newX > fullW*2 - viewportW)
+            newX -= fullW;
+        scroller.scrollLeft(newX);
+    };
+    setInterval(doScroll, 20);
+    tweenToNewSpeed(controller.fullSpeed);
     };

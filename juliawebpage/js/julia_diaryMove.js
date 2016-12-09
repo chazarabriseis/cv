@@ -39,6 +39,8 @@ for (entry in entries) {
 	$('.diary-entry:last').append(combined);
 
 	mapLocation = diary.entry[index].location;
+	console.log(mapLocation);
+	initializeMap(index);
 
 	$('.diary-entry:last').append(asign(HTMLdiaryText,diary.entry[entry].text));
 	var galleryCombined = HTMLgalleryStart(index);
