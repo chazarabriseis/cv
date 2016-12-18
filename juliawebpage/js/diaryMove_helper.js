@@ -24,7 +24,6 @@ function HTMLdiaryMap(index) {
 
 function initializeMap(index,mapLocation) {
     var map;
-    var locations;
 
     var mapOptions = {
         disableDefaultUI: true
@@ -32,15 +31,6 @@ function initializeMap(index,mapLocation) {
 
     console.log('#map-'+index)
     map = new google.maps.Map(document.querySelector('#map-'+index), mapOptions);
-
-    //Create a google map that shows location
-    function locationFinder() {
-        var locations = [mapLocation];
-        //locations.push(mapLocation);
-        console.log(locations);
-        return locations;
-    };
-    
 
     function createMapMarker(placeData) {
         // The next lines save location data from the search result object to local variables
@@ -113,25 +103,11 @@ function initializeMap(index,mapLocation) {
     // Sets the boundaries of the map based on pin locations
     window.mapBounds = new google.maps.LatLngBounds();
 
-    // locations is an array of location strings returned from locationFinder()
-    locations = locationFinder();
-    console.log(locations);
-
-    // pinPoster(locations) creates pins on the map for each location in
-    // the locations array
-    pinPoster(locations);
+    // pinPoster(locations) creates pins on the map for location
+    pinPoster([mapLocation]);
+    map.setZoom(6);
     
     }
-
-// Calls the initializeMap() function when the page loads
-//window.addEventListener('load', initializeMap);
-
-// Vanilla JS way to listen for resizing of the window
-// and adjust map bounds
-//window.addEventListener('resize', function(e) {
-  //Make sure the map bounds get updated on page resize
-//map.fitBounds(mapBounds);
-//});
 
 //////////////////////////////
 //Adds infinite scrolling to photobanner
