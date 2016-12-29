@@ -105,7 +105,7 @@ function initializeMap(index,mapLocation) {
 
     // pinPoster(locations) creates pins on the map for location
     pinPoster([mapLocation]);
-    map.setZoom(6);
+    map.setZoom(12);
     
     }
 
