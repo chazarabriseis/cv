@@ -1,5 +1,28 @@
 var diary = {
 	"entry": [{
+		"date": "10-15.01.2017",
+		"location": "Ben Lomond nationalpark, Tasmania, Australia",
+		"title": "Climbing at White Water Wall and Ben Lomond",
+		"text": "After the 6 day hiking trip we decided to head back to Freycinet to stay at the remote hike-in beach for a couple of days before heading back to Melbourne. However, we stayed the first night at WhiteWater wall and had a lovely day of yoga & climbing and so many more climbs we wanted to do so we ended up staying 4nights there instead of heading to Cooks bay. It was so nice, no driving, no packing up, no hiking...and we had amazing weather. We both had to step up our lead climbing grades since there is only around 30 routes in all of Tasmania under grade 14, a couple of them at WhiteWaterWall. So we ended up leading 15s, picking up crack climbing techniques along the way and falling in our own placements. <br> Talking to climbers we learnt that Ben Lomond nationalpark has amazing dolorite cliffs. We found one 3pitch 13 at the Denison Crag, which included a 30min 4WD track, 1hour hike in and a great campspot on a lake next to the cliffs. Sounded like a nice last little adventure! With a pretty hectic 4WD track, super windy conditions not allowing us to climb and the only flat spot for the tent on a boulder sitting in the lake it was a great adventure. It felt amazing to be nestled in between the lake and the 300m dolorite cliffs, all by ourselves...until at midnight 3 climbers from Hobart arrived struggling to find a campspot and sleeping right next to us. <br> For our last night we headed to Hellyer Gorge, hoping to spot Platypus in the wild and being close to Devenport for the ferry the next day. Unfortunately the Platypus decided to sleep in and at 9.20pm we went to bed for an early departure to catch the ferry back to Melbourne",
+		"coverimage": "images/blog/9/img_0.jpg",
+		"images_landscape": ["images/blog/9/img_0.jpg","images/blog/9/img_2.jpg","images/blog/9/img_4.jpg","images/blog/9/img_6.jpg","images/blog/9/img_8.jpg","images/blog/9/img_10.jpg","images/blog/9/img_12.jpg","images/blog/9/img_14.jpg","images/blog/9/img_16.jpg","images/blog/9/img_18.jpg","images/blog/9/img_20.jpg","images/blog/9/img_22.jpg","images/blog/9/img_24.jpg","images/blog/9/img_26.jpg"],
+		"images_portrait": ["images/blog/9/img_1.jpg","images/blog/9/img_3.jpg","images/blog/9/img_5.jpg","images/blog/9/img_7.jpg","images/blog/9/img_9.jpg"]
+	},{
+		"date": "3-9.01.2017",
+		"location": "Western Arthur Range, Tasmania, Australia",
+		"title": "Western Arthur Traverse",
+		"text": "",
+		"coverimage": "images/blog/8/img_0.jpg",
+		"images_landscape": ["images/blog/8/img_0.jpg","images/blog/8/img_2.jpg","images/blog/8/img_4.jpg","images/blog/8/img_6.jpg","images/blog/8/img_8.jpg","images/blog/8/img_10.jpg","images/blog/8/img_12.jpg","images/blog/8/img_14.jpg","images/blog/8/img_16.jpg","images/blog/8/img_18.jpg","images/blog/8/img_20.jpg","images/blog/8/img_22.jpg","images/blog/8/img_24.jpg","images/blog/8/img_26.jpg"],
+		"images_portrait": ["images/blog/8/img_1.jpg","images/blog/8/img_3.jpg","images/blog/8/img_5.jpg","images/blog/8/img_7.jpg"]
+	},{
+		"date": "29.12.2016-2.01.2017",
+		"location": "Ben Lomond Nationalpark, Tasmania, Australia",
+		"title": "New Years in Hobart",
+		"text": "After a great time in the mountains but with soaked shoes and a wet tent we were happy to head to Hobart for a few days of city life. We stayed with Jeremy's friend Andrew for a few nights and then with his step sister Ursula where we enjoyed good company & meals, cold beers and Julia learnt to love backyard cricket & bbq'd octopus. Andrew inspired us with his bushwakling stories in the south west and so the plan of hiking the mighty Western Arthur's traverse started to form. We prepared food for the 7-9 day hike and organized maps, we were getting excited! In the meantime we walked down a river 5min from Andrew's place and went swimming in the ocean. <br> We spent New Year's eve with Jana and Gordi at the Taste, a very fun and delicious evening. We headed to the MONA on the 2nd of January to share a good exhibition with too many people, it really spoilt the atmosphere. <br> On the 3rd we were ready to leave the busy city life behind us, but not after getting all the delicious treats from the German bakery in Sandy Bay :)","	"coverimage": "images/blog/7/img_0.jpg",
+		"images_landscape": ["images/blog/7/img_0.jpg","images/blog/7/img_2.jpg","images/blog/7/img_4.jpg"],
+		"images_portrait": ["images/blog/7/img_1.jpg","images/blog/7/img_3.jpg","images/blog/7/img_5.jpg"]
+	},{
 		"date": "24-29.12.2016",
 		"location": "Lake St. Claire, Tasmania, Australia",
 		"title": "Mountaineering adventure on the Du Can Range",
@@ -79,7 +102,7 @@ for (entry in entries) {
 
 	//mapLocation = diary.entry[index].location;
 	//console.log(mapLocation);
-	initializeMap(index,diary.entry[index].location);
+	//initializeMap(index,diary.entry[index].location);
 
 	$('.diary-entry:last').append(asign(HTMLdiaryText,diary.entry[entry].text));
 	var galleryCombined = HTMLgalleryStart(index);
