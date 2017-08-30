@@ -4,7 +4,7 @@ var julia = {
 		"label": "Physicist",
 		"picture": "/images/resume/julia_pic.jpg",
 		"email": "julia.s.baldauf@gmail.com",
-		"phone": "+61 (0) 435 - 340 350",
+		"phone": "+49 163 1378833",
 		"website": "",
 		"summary":"I am a physicist with a strong computer science background. Both, my masters and PhD were  in experimental nano science and my latest project in computer science using neural nets. I also have professional experience in  team leadership roles and strategic planing of projects. I am very passionate about working in teams and together driving positive and impactful project outcomes.",		"summaryold": "I am a passionate scientist and leader. I am driven by my curiosity to see if processes and devices can be improved by questioning the status quo. My very structured and logical approach enables me to think projects through, from a high-level perspective all the way to the important details. I enjoy working as part of a team and creating a high preforming environment in which people support and respect each other.",		
 		"location": "267 Moray Street, 3205 VIC, Melbourne, Australia",
