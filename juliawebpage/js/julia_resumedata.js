@@ -742,7 +742,7 @@ var julia = {
 				"name": "Software",
 				"level": "Master",
 				"keywords": [
-					"Igor", "Latex", "Labview", "Open Office Programs", "Lotus Notes", "Adobe Illustrator"
+					"Igor", "Latex", "Labview", "Open Office Programs", "Lotus Notes", "Adobe Illustrator", "GitHub"
 				]
 			}, {
 				"name": "Operating Systems",
