@@ -64,6 +64,7 @@ var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolTitle = '%data%';
 var HTMLschoolImage = '<div class="row"><div class="col-sm-5"><img src="%data%" class="img-responsive patent"></div>';
 var HTMLschoolSummary = '<div class="col-sm-6"><p align="right" class="pad-top"><span class="bold">Thesis title:</span>%data%</p></div></div>';
+var HTMLschoolDescription = '<p align="justify">%data%</p>';
 
 var HTMLonlineClasses = '<div class="course-entry distance"></div>';
 var HTMLonlineTitle = '<a href="%href%">%data%';

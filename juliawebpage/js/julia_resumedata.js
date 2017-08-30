@@ -935,6 +935,7 @@ for (school in schools) {
 	if (julia.education[school].thesisTitle) {
 		$('.education-entry:last').append(asign(HTMLschoolSummary,julia.education[school].thesisTitle));
 		$('.education-entry:last').append(asign(HTMLschoolImage,julia.education[school].image));
+		$('.education-entry:last').append(asign(HTMLschoolDescription,julia.education[school].description));
 		}
 	$('.education-entry:last').append('<hr>')
 	}
