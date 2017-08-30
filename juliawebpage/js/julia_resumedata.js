@@ -6,8 +6,7 @@ var julia = {
 		"email": "julia.s.baldauf@gmail.com",
 		"phone": "+61 (0) 435 - 340 350",
 		"website": "",
-		"summary":"I am a passionate scientist with the drive to change the world for the better through my work in the field of research and innovation. I am a physicist by training having received both my masters and PhD in the field of Nanotechnology. After completing my PhD I am continually developing my professional capabilities in  team leadership roles and strategic planing of projects. I am very passionate about building successful teams and driving positive and impactful project outcomes. Furthermore, I am continuously learning about new research fields in order to stay up to date and to be relevant in a fast changing - technology driven world.",
-		"summaryold": "I am a passionate scientist and leader. I am driven by my curiosity to see if processes and devices can be improved by questioning the status quo. My very structured and logical approach enables me to think projects through, from a high-level perspective all the way to the important details. I enjoy working as part of a team and creating a high preforming environment in which people support and respect each other.",		
+		"summary":"I am a physicist with a strong computer science background. Both, my masters and PhD were  in experimental nano science and my latest project in computer science using neural nets. I also have professional experience in  team leadership roles and strategic planing of projects. I am very passionate about working in teams and together driving positive and impactful project outcomes.",		"summaryold": "I am a passionate scientist and leader. I am driven by my curiosity to see if processes and devices can be improved by questioning the status quo. My very structured and logical approach enables me to think projects through, from a high-level perspective all the way to the important details. I enjoy working as part of a team and creating a high preforming environment in which people support and respect each other.",		
 		"location": "267 Moray Street, 3205 VIC, Melbourne, Australia",
 		"profiles": [{
 			"network": "LinkedIn",
@@ -28,8 +27,8 @@ var julia = {
 		"website": "http://www.research.ibm.com/labs/australia/index.shtml",
 		"startDate": "July 2015",
 		"endDate": "November 2016",
-		"summary": "As a potential future leader of IBM Research Australia I was given a permanent position as a Staff Researcher. Restructuring of the Research Lab meant a stronger focus on healthcare, dissolving the Natural Resources efforts. I moved into the cognitive analytics team driving the agenda deep learning in the healthcare and finance sectors. This involved up skilling to machine learning. I focused on neural networks and worked on a project labelling OCT images of arteries. As a continuing member of the IDT team I helped to improve the Labs innovative output and mentoring others.",
-				"highlights": [""]
+		"summary": "As a potential future leader of IBM Research Australia I was given a permanent position as a Staff Researcher. Restructuring of the Research Lab meant a stronger focus on healthcare, dissolving the natural resources efforts. I moved into the cognitive analytics team driving the agenda of deep learning in the healthcare and finance sectors. This involved up skilling to machine learning. I focused on neural networks and worked on semantic image labelling of optical coherence tomography data of arteries with stents. As a continuing member of the ‘Invention Disclosure Team’ team I helped to improve the labs innovative output and mentoring others.",
+		"highlights": [""]
 	}, {
 		"company": "IBM Research Australia",
 		"location": "Melbourne, Australia",
@@ -37,7 +36,7 @@ var julia = {
 		"website": "http://www.research.ibm.com/labs/australia/index.shtml",
 		"startDate": "July 2013",
 		"endDate": "June 2015",
-		"summary": "I was hired to work in the Bionanosensor team, setting up the experimental facilities and developing the strategic plan of the project. As this project got moved back to IBM Research Yorktown I moved in the  Nanotechnology in Natural Resources team taking over the leadership of this team. I got enrolled in the IBM emerging talent program to help unfold my potential in this role and as a future leader. This team leadership role role involved strategic planning across the Australia Research Lab together with the other global Labs as well as working closely with clients. I successfully developed trustful relationships with clients by understanding their needs and proposing solutions resulting in signing a ‘Joint Study Agreement’ with Metso. Furthermore, I enabled this interdisciplinary team to work successfully together by defining a goal and providing guidance. I also contributed technically by learning new skills in the field of computational science resulting in two publications. Furthermore, I was appointed a member of the ‘Invention Disclosure Team’ to help drive the Labs innovation output.",	"highlights": ["Leading Nanotechnology in NR team", "Emerging Leader Program"]
+		"summary": "I initially joined IBM Research Australia to work in the Bionanosensor team, setting up the experimental facilities and helping to develop the strategic plan of the project. However as this project moved back to IBM Research Yorktown I moved in the  nanotechnology in natural resources team taking over the leadership of this team. Following this, I was enrolled in the IBM emerging talent program to help unfold my potential in this role. This team leadership role involved strategic planning across the Australia Research Lab, collaboration with global labs as well as working closely with clients. I successfully developed trustful relationships with clients by listening and understanding their needs and proposing research projects. This resulted in signing a ‘Joint Study Agreement’ with Metso to  study the froth flotation process. I also contributed technically studying nanoscale systems with molecular dynamic simulations. During this period I was appointed a member of the ‘Invention Disclosure Team’ to help drive the labs innovation output."
 	}, {
 		"company": "University of Melbourne",
 		"location": "Melbourne, Australia",
@@ -45,7 +44,7 @@ var julia = {
 		"website": "http://www.nanoparticle.com/",
 		"startDate": "February 2013",
 		"endDate": "April 2013",
-		"summary": "In this role in Paul Mulvaney's Nanoscience Lab I was responsible for the training of new users in the application of various instruments which I built/maintained during my time as a PhD student and knowledge transfer to help formulate new research questions and projects. I enjoy sharing my knowledge and expertise and I was always able to successfully develop and maintain relationships. This is reflected in my several co-authorship publications with different groups. I believe that one key factor in this success is my ability to show respect and interest towards people from different backgrounds and with diverse opinions, which gains me respect and trust in return.",
+		"summary": "In my role as a research assistant I was responsible training new users in the techniques and application of various instruments which I built and developed during my time as a PhD student. It also involved knowledge transfer helping to formulate new research questions and projects.",
 		"highlights": [""]
 	}], 
 
@@ -124,7 +123,7 @@ var julia = {
 		"website": "http://www.nanoparticle.com/",
 		"studyType": "PhD",
 		"thesisTitle": "The effects of External Fields on the Optical Properties of Nanocrystals",
-		"description": " Nanocrystals are promising candidates for applications like LEDs, solar cells and bio labels. My PhD projects gained insights in the stability of Nanocrystals under different conditions to help pave the way for their successful implementation in these applications.",
+		"description": "Excitonics and plasmonics are exciting fields in  nano science due to the outstanding optical properties evolving in the nanometer scale of semiconductor and metal materials. This makes nanocrystals promising candidates for applications like for example LEDs, solar cells and bio labels, however their optical properties are not fully understood yet. In my thesis I focused on CdSe/CdS/ZnS and gold nanocrystals. In order to further understand their optical properties I constructed a widefield microscope where I was able to apply different atmospheres to the samples, showing there is a strong correlation between the atmosphere and the optical behaviour of nanocrystals. This was confirmed and further studied using a confocal microscope allowing single nanocrystal exciton lifetime measurements. Furthermore, I developed techniques to overlap widefield/darkfield images with atomic force microscope images and scanning electron images to gain insights in the structural dependence on the optical properties.  I also developed devices with which I was able to apply electric fields to single nanocrystals and ensembles in order to study charging effects on nanocrystals.",
 		"startDate": "June 2009",
 		"endDate": "February 2013",
 		"courses": [""]
@@ -138,7 +137,7 @@ var julia = {
 		"supervisor": "Prof. Feldmann",
 		"studyType": "Masters",
 		"thesisTitle": "Size dependent Luminescence of Semiconductor Nanocrystals",
-		"description": "Nanoscience creates a wealth of new materials, during my master degree I investigated the effect of shape on the properties of these novel materials.",
+		"description": "Nano science creates a wealth of new materials, during my master degree I investigated size dependence on the properties of  semiconductor tetrapods using a widefield setup with a cryostat sample chamber.",
 		"startDate": "October 2002",
 		"endDate": "March 2009",
 		"courses": [""]

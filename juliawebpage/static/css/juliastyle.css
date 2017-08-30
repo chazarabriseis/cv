@@ -494,24 +494,31 @@ hr {
 
  #scroller {
       position: relative;
+      height: 200px; 
+      margin: 0 auto;
   }
+
   #scroller .innerScrollArea {
-      /* overflow: hidden; 
+      overflow: hidden; 
       position: absolute; 
       left: 0;
       right: 0;
       top: 0;
-      bottom: 0; */
-      height: 600px;
-      width: 100%;
+      bottom: 0;
       padding-bottom: 50px;
   }
-  #scroller ul {
+
+
+/*  #scroller ul { */
+
+.innerScrollArea ul {
       padding: 0;
       margin: 0;
       position: relative;
   }
-  #scroller li {
+
+ /* #scroller li {  */
+.innerScrollArea li {
       padding: 0;
       margin: 0;
       list-style-type: none;
