@@ -20,7 +20,18 @@ var julia = {
 		]
 	},
 
-	"work": [{
+	"work": [
+{
+		"company": "Pollinate Energy",
+		"location": "Lucknow, India",
+		"position": "Guest Program Leader",
+		"website": "https://pollinateenergy.org/our-programs",
+		"startDate": "April 2017",
+		"endDate": "May 2017",
+		"summary": "Pollinate Energy is a social enterprise with the aim to reduce poverty in urban poor India through the access to solar lights and fans. After volunteering for them in 2016 I returned this time to help run the professional fellowship program with 12 participants. I was guiding the teams throughout their projects helping the company to further establish their business in Uttar Pradesh. Working in urban poor India was a challenging experience which helped me grow as a person.",
+		"highlights": [""]
+	},
+	{
 		"company": "IBM Research Australia",
 		"location": "Melbourne, Australia",
 		"position": "Staff Researcher",
