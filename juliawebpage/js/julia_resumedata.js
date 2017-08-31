@@ -28,7 +28,7 @@ var julia = {
 		"website": "https://pollinateenergy.org/our-programs",
 		"startDate": "April 2017",
 		"endDate": "May 2017",
-		"summary": "Pollinate Energy is a social enterprise with the aim to reduce poverty in urban poor India through the access to solar lights and fans. After volunteering for them in 2016 I returned this time to help run the professional fellowship program with 12 participants. I was guiding the teams throughout their projects helping the company to further establish their business in Uttar Pradesh. Working in urban poor India was a challenging experience which helped me grow as a person.",
+		"summary": "Pollinate Energy is a social enterprise with the aim to reduce poverty in urban poor India through the access to solar lights and fans. After volunteering for Pollinate Energy in 2016 I returned this time to help run the professional fellowship program with 12 participants. I was guiding the teams throughout their projects helping the company to further establish their business in Uttar Pradesh. Working in urban poor India was a challenging experience which helped me to further grow as a person.",
 		"highlights": [""]
 	},
 	{
