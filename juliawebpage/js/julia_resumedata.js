@@ -347,10 +347,10 @@ var julia = {
 		"comment": ""
 	}, {
 		"title": "Fullerene-fullerene interactions in water: A molecular dynamic study",
-		"authors": ["J. Baldauf", "A. Makarucha", "M. Downton", "G.Yiapanis"],
-		"journal": "Journal of Physical Chemistry C",
-		"volume": "submitted",
-		"year": "",
+		"authors": ["A. Makarucha", "J. Baldauf", "M. Downton", "G.Yiapanis"],
+		"journal": "Journal of Physical Chemistry B",
+		"volume": "120 (42)",
+		"year": "2016",
 		"website": "http://pubs.acs.org/doi/abs/10.1021/acs.jpcb.6b07471",
 		"summary": "In this paper, we used explicit solvent molecular dynamic simulations to show that size- and shape-dependent distortions of the water layer near the surface affects the aggregation of nested fullerenes in water. Spherically shaped particles transition quickly into contact, while larger fullerenes, characterized by a lower sphericity, cluster at a much slower rate.",	"image": "images/publication/TOC.png",
 		"comment": ""
@@ -358,8 +358,8 @@ var julia = {
 		"title": "Simulations of Graphitic Nanoparticles at Air-Water Interfaces",
 		"authors": ["G.Yiapanis", "A. Makraucha", "J. Baldauf", "M. Downton"],
 		"journal": "Nanoscale",
-		"volume": "submitted",
-		"year": "",
+		"volume": "47",
+		"year": "2016",
 		"website": "http://pubs.rsc.org/en/Content/ArticleLanding/2016/NR/C6NR06475B#!divAbstract",
 		"summary": "The free energy associated with transferring a set of fullerene particles through a finite water layer is calculated using explicit solvent molecular dynamic simulations. The particles considered in- clude single-shelled (single-wall) and multi-shelled (nano-onion) fullerenes ranging from 6 to 28 Angstrom in radius. Corresponding changes in energy suggest a stronger affinity of carbon nano-onions for water compared to their single-shelled analogues.",	
 		"image": "images/publication/FWI.png",
