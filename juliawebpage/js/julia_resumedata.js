@@ -2,22 +2,14 @@ var julia = {
 	"basics": {
 		"name": "Dr. Julia S. Baldauf",
 		"label": "Physicist",
-		"picture": "/images/resume/julia_pic.jpg",
+		"picture": "/images/resume/julia.png",
 		"email": "julia.s.baldauf@gmail.com",
 		"phone": "+49 163 1378833",
 		"website": "",
 		"summary":"I am a physicist with a strong computer science background. Both, my masters and PhD were  in experimental nano science and my latest project in computer science using neural nets. I also have professional experience in  team leadership roles and strategic planing of projects. I am very passionate about working in teams and together driving positive and impactful project outcomes.",		"summaryold": "I am a passionate scientist and leader. I am driven by my curiosity to see if processes and devices can be improved by questioning the status quo. My very structured and logical approach enables me to think projects through, from a high-level perspective all the way to the important details. I enjoy working as part of a team and creating a high preforming environment in which people support and respect each other.",		
 		"location": "267 Moray Street, 3205 VIC, Melbourne, Australia",
-		"profiles": [{
-			"network": "LinkedIn",
-			"username": "JuliaBaldauf",
-			"url": "https://www.linkedin.com/in/julia-baldauf-95716950?trk=hp-identity-name"
-		},{
-			"network": "GitHub",
-			"username": "chazarabriseis",
-			"url": "https://github.com/chazarabriseis"
-		}
-		]
+		"linkedin": "https://www.linkedin.com/in/julia-baldauf-95716950?trk=hp-identity-name",
+		"github": "https://github.com/chazarabriseis"
 	},
 
 	"work": [
@@ -1037,4 +1029,9 @@ $("#contact").append('<span class="bold"> Email: </span>')
 $("#contact").append(julia.basics.email)
 $("#contact").append('<span class="bold">   Phone: </span>')
 $("#contact").append(julia.basics.phone)
-
+$("#contact").append('<span class="bold">   Github: </span>')
+var formattedgitHub = HTMLgithub.replace("%href%",julia.basics.github);
+$("#contact").append(formattedgitHub)
+$("#contact").append('<span class="bold">   LinkedIn: </span>')
+var formattedlinkedin = HTMLgithub.replace("%href%",julia.basics.linkedin);
+$("#contact").append(formattedlinkedin)
