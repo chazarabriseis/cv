@@ -397,12 +397,22 @@ var julia = {
 		"image": "images/patent/grapheneNP.png",
 		"comment": ""
 	}, {
+		"title": "Tunable piezo-driven sieve consisting of a multi-nanopore chip",
+		"authors": ["J. Baldauf", "C. Schieber", "S. Harrer", "J. Wagner"],
+		"journal": "IBM Technical Disclosure Bulletin",
+		"volume": "",
+		"date": "08/07/2014",
+		"website": "",
+		"summary": "Fabrication of solid state nanopores results in a fixed pore diameter allowing only the translocation of molecules of a certain size. As the current change is largely a function of the volume of a molecule, smaller molecules cannot be detected due to a small current change and larger molecules will not be able to translocate at all. We propose a tunable multi-nanopore array which can be continuously closed and opened in a reversible manner. The idea is to employ piezoelectric materials which allow nanometre precision in opening and closing of the pore.",
+		"image": "images/patent/piezo.png",
+		"comment": ""
+	}, {
 		"title": "Engulfed nano/micro bubbles for improved recovery of large particles in a flotation cell",
 		"authors": ["J. Baldauf", "A. Bojovschi", "S. Moore "],
 		"date": "07/14/2015",
 		"docket": "YOR920140437US1",
 		"location": "US",
-		"website": "",
+		"website": "https://patents.google.com/patent/US20170014834A1/en",
 		"summary": "The present invention provides the use of a multitude of nano/micro bubbles or a combination thereof situated on the surface of a solid particle to increase its attachment to a larger carrier bubble. They enhance the adhesion between the two entities thereby facilitating the flotation of larger particles.The present invention provides a method and apparatus for floating particles larger than about 100 micrometer (for minerals) and 600 micrometer (for coal), which is the the upper size limit of current technologies.",		
 		"image": "images/patent/engulfedNB.png",
 		"comment": ""
@@ -412,7 +422,7 @@ var julia = {
 		"date": "08/10/2015",
 		"docket": "YOR920150002US1",
 		"location": "US",
-		"website": "",
+		"website": "https://patents.google.com/patent/US20170043356A1/en",
 		"summary": "Froth flotation is a process used to selectively separate hydrophobic from hydrophilic materials. We propose a new mechanism by which nanobubbles, formed on the hydrophobic surface, create an increased attachment force through a capillary bridge between the hydrophobic surface and a collecting air bubble, resulting in the ability to increase the recovery of coarse particles.",		
 		"image": "images/patent/nanobubble.png",
 		"comment": ""
@@ -422,7 +432,7 @@ var julia = {
 		"date": "09/07/2015",
 		"docket": "YOR920150333US1",
 		"location": "US",
-		"website": "",
+		"website": "https://patents.google.com/patent/US20170066660A1/en",
 		"summary": "This invention introduces a new sensor containing a MEMS (micro electro-mechanical systems) accelerometer and gyroscope that can be placed into a flow and record its acceleration as it moves around within the flow field.  Upon recovery of the sensor, the acceleration data can be retrieved via removable onboard memory and post-processed with custom software to produce a trajectory through space and time helping to understand the details of the fluid dynamics.",
 		"image": "images/patent/sensor.png",
 		"comment": ""
@@ -432,9 +442,29 @@ var julia = {
 		"date": "12/22/2015",
 		"docket": "YOR920151300US1",
 		"location": "US",
-		"website": "",
+		"website": "https://patents.google.com/patent/US20170173594A1/en",
 		"summary": "This invention describes a process for separating particulate material from a mixture during froth flotation by treating the mixture with anisotropic (janus) particles. The janus particle plays the role of collector, requiring that one part of the anisotropic particle be designed to preferentially adsorb to the mineral surface (selective adsorption) while the remaining part of the janus particle be designed to selectively adsorb to the air bubble with the use of hydrocarbon chains or other hydrophobic domains of sufficient size.",		
 		"image": "images/patent/anisotropic.png",
+		"comment": ""
+	}, {
+		"title": "Real-time detection of emergency situations via cognitive analysis of audio data streams",
+		"authors": ["J. Baldauf", "B. Mashford", "A. Makarucha"],
+		"journal": "IBM Technical Disclosure Bulletin",
+		"volume": "",
+		"date": "01/11/2016 ",
+		"website": "",
+		"summary": "Emergency detection in crowded or isolated environments can be difficult task for staff assigned with the responsibility of responding in an emergency. Examples of professions where a cognitive detection system may be useful, include: crowd control security, commuter train drivers, museum attendants, etc. In our proposed method, an array of microphones are setup within a commuter train or like environment, the recorded audio  is streamed to a low-power computer device and analyzed to detect stress-related vocal patterns (e.g. screaming, shouting) to assist identifying emergencies.",
+		"image": "images/patent/audiosystem.png",
+		"comment": ""
+	} , {
+		"title": "A system and method for gold deposit identification",
+		"authors": ["J. Baldauf", "A. Bojovschi", "B. Mashford", "G. Yiapanis", "A. Makarucha"],
+		"journal": "IBM Technical Disclosure Bulletin",
+		"volume": "",
+		"date": "02/11/2016",
+		"website": "",
+		"summary": "Processes, that involve ultrasound sensors and drilling boreholes to sample the ground, required for mining deposits identification are expensive, and difficult to carry out on mountainous train. The present invention proposes a system and method for detecting mineral deposits and chemical or biological contamination of the soil. The system uses automated systems to locate the area of interest and to map its characteristics. The proposed invention relies on unmanned aerial vehicles and data analytics to characterize geological characteristics of earth by analyzing sensing data pertaining to tree or plats samples.",
+		"image": "images/patent/mineraldeposit.png",
 		"comment": ""
 	}, {
 		"title": "Optimal distributed energy resource management system",
@@ -447,44 +477,44 @@ var julia = {
 		"image": "images/patent/energy.png",
 		"comment": ""
 	}, {
-		"title": "Ensemble-based Cognitive Online Health System for Effective Disease Diagnosis",
-		"authors": ["J. Baldauf", "M. Salehi", "F. Jalali","L. Ghahremanlou"],
+		"title": "System, method and computer program product for ensemble-based cognitive online health system for effective disease diagnosis",
+		"authors": ["J. Baldauf", "L. Ghahremanlou", "F. Jalali", "M. Salehi"],
 		"date": "08/31/2016",
-		"docket": "YOR820160610US1",
+		"docket": "YOR920161175US1",
 		"location": "US",
 		"website": "",
 		"summary": "Patients often complain about the lack of precise diagnosis of their medical problems as well as the lengthy process of finding a matched specialist for their disease. We solve the problem of uncertainty in diagnosis of special diseases by proposing an ensemble-based diagnosis system. To make the diagnosis process more robust, an online consulting system is presented with the use of diverse physicians and cognitive intelligent agents.",		
 		"image": "images/patent/Schema.png",
 		"comment": ""
 	}, {
-		"title": "Tunable piezo-driven sieve consisting of a multi-nanopore chip",
-		"authors": ["J. Baldauf", "C. Schieber", "S. Harrer", "J. Wagner"],
-		"journal": "Technical Disclosure Bulletin",
-		"volume": "",
-		"date": "08/07/2014",
+		"title": "User-Friendly navigation system",
+		"authors": ["J. Baldauf", "F. Jalali", "B. Mashford", "M. Salehi"],
+		"date": "03/5/2017",
+		"docket": "YOR920161808US1",
+		"location": "US",
 		"website": "",
-		"summary": "Fabrication of solid state nanopores results in a fixed pore diameter allowing only the translocation of molecules of a certain size. As the current change is largely a function of the volume of a molecule, smaller molecules cannot be detected due to a small current change and larger molecules will not be able to translocate at all. We propose a tunable multi-nanopore array which can be continuously closed and opened in a reversible manner. The idea is to employ piezoelectric materials which allow nanometre precision in opening and closing of the pore.",
-		"image": "images/patent/piezo.png",
+		"summary": "The exemplary embodiments of this invention relate generally to navigation systems and, more specifically, to a navigation system that provides user-friendly instructions to a user of the navigation system.",		
+		"image": "images/patent/navigation.png",
 		"comment": ""
 	}, {
-		"title": "A system and method for gold deposit identification",
-		"authors": ["J. Baldauf", "A. Bojovschi", "B. Mashford", "G. Yiapanis", "A. Makarucha"],
-		"journal": "Technical Disclosure Bulletin",
-		"volume": "",
-		"date": "02/11/2016",
+		"title": "Intravescular catheter for modeling blood vessels",
+		"authors": ["J. Baldauf", "D. Beurle", "M. Downton", "K. Halupka", "S. Moore", "C. Schieber"],
+		"date": "05/10/2017",
+		"docket": "YOR920161273US1",
+		"location": "US",
 		"website": "",
-		"summary": "Processes, that involve ultrasound sensors and drilling boreholes to sample the ground, required for mining deposits identification are expensive, and difficult to carry out on mountainous train. The present invention proposes a system and method for detecting mineral deposits and chemical or biological contamination of the soil. The system uses automated systems to locate the area of interest and to map its characteristics. The proposed invention relies on unmanned aerial vehicles and data analytics to characterize geological characteristics of earth by analyzing sensing data pertaining to tree or plats samples.",
-		"image": "images/patent/mineraldeposit.png",
+		"summary": "",		
+		"image": "",
 		"comment": ""
 	}, {
-		"title": "Real-time detection of emergency situations via cognitive analysis of audio data streams",
-		"authors": ["J. Baldauf", "B. Mashford", "A. Makarucha"],
-		"journal": "Technical Disclosure Bulletin",
-		"volume": "",
-		"date": "01/11/2016 ",
+		"title": "Intravescular catheter including markers",
+		"authors": ["J. Baldauf", "D. Beurle", "M. Downton", "K. Halupka", "S. Moore", "C. Schieber"],
+		"date": "05/20/2017",
+		"docket": "YOR920161274US1",
+		"location": "US",
 		"website": "",
-		"summary": "Emergency detection in crowded or isolated environments can be difficult task for staff assigned with the responsibility of responding in an emergency. Examples of professions where a cognitive detection system may be useful, include: crowd control security, commuter train drivers, museum attendants, etc. In our proposed method, an array of microphones are setup within a commuter train or like environment, the recorded audio  is streamed to a low-power computer device and analyzed to detect stress-related vocal patterns (e.g. screaming, shouting) to assist identifying emergencies.",
-		"image": "images/patent/audiosystem.png",
+		"summary": "",		
+		"image": "",
 		"comment": ""
 	}],
 
