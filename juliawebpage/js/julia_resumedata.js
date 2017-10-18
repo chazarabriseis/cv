@@ -537,6 +537,12 @@ var julia = {
 		"summary": "",
 		"website":""
 	}, {
+		"date": "April 2013",
+		"title": "Most Valuable Player AAA, Beachvolleyball Season 2012/13",
+		"awarder": "VicBeach",
+		"summary": "",
+		"website":"http://www.vicbeach.com.au"
+	}, {
 		"date": "June 2012",
 		"title": "Young Nanoscience Ambassador Award",
 		"awarder": "Australian Nanotechnology Network",
