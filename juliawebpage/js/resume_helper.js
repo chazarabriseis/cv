@@ -81,6 +81,37 @@ var HTMLinterestsStart = '<ul id="interests"></ul>'
 var HTMLinterest = '<li class="horizontal-list">%data%</li><li class="horizontal-list">   </li>';
 
 
+function locationTestFinder() {
+     var locations = [];
+
+     locations.push(julia.basics.location);
+
+     julia.education.forEach(function(school){
+       locations.push(school.location);
+     });
+
+
+
+    julia.volunteer.forEach(function(position){
+       locations.push(position.location);
+     });
+
+     julia.work.forEach(function(job){
+       locations.push(job.location);
+     });
+
+         julia.studentPlacement.forEach(function(school){
+       locations.push(school.location);
+     });
+
+    //remove all locations that appear twice
+    var unique = locations.filter(function(elem, index, self) {
+    return index == self.indexOf(elem);
+    });
+
+    return unique;
+   }
+
 //Create a google map that shows all locations
 var map;    // declares a global map variable
 
@@ -104,10 +135,6 @@ function locationFinder() {
        locations.push(school.location);
      });
 
-    julia.studentPlacement.forEach(function(school){
-       locations.push(school.location);
-     });
-
     julia.volunteer.forEach(function(position){
        locations.push(position.location);
      });
@@ -115,8 +142,17 @@ function locationFinder() {
      julia.work.forEach(function(job){
        locations.push(job.location);
      });
+    
+    julia.studentPlacement.forEach(function(school){
+       locations.push(school.location);
+     });
 
-     return locations;
+    //remove all locations that appear twice
+    var unique = locations.filter(function(elem, index, self) {
+    return index == self.indexOf(elem);
+    });
+
+    return unique;
    }
 
 function createMapMarker(placeData) {
