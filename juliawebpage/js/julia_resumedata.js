@@ -6,7 +6,7 @@ var julia = {
 		"email": "julia.s.baldauf@gmail.com",
 		"phone": "+49 163 1378833",
 		"website": "",
-		"summary":"I am a physicist with a strong computer science background. Both, my masters and PhD were  in experimental nano science and my latest project in computer science using neural nets. I also have professional experience in  team leadership roles and strategic planing of projects. I am very passionate about working with a team and together driving positive and impactful project outcomes.",		
+		"summary":"I am a curious scientist who believes in data driven approaches to gain insight, make informed decisions and to educate, for example by leveraging cloud software to visualize and collect data. In addition, I am passionate about sustainability and I work best when my role and projects are aiming to create innovative and sustainable solutions instead of accepting and improving the status quo and established practices. This is what drives and motivates me to push boundaries and drive progress. Furthermore, I enjoy leading teams and projects with a hands-on mentality since I believe the best innovations start with collaboration, challenging and building on each others ideas.",		
 		"summaryold": "I am a passionate scientist and leader. I am driven by my curiosity to see if processes and devices can be improved by questioning the status quo. My very structured and logical approach enables me to think projects through, from a high-level perspective all the way to the important details. I enjoy working as part of a team and creating a high preforming environment in which people support and respect each other.",		
 		"location": "Otterfing, Germany",
 		"linkedin": "https://www.linkedin.com/in/julia-baldauf-95716950?trk=hp-identity-name",
@@ -14,7 +14,27 @@ var julia = {
 	},
 
 	"work": [
-{
+	{
+		"company": "Julia Baldauf",
+		"location": "Otterfing, Germany",
+		"position": "Consultant",
+		"website": "",
+		"startDate": "January 2021",
+		"endDate": "",
+		"summary": "Helping businesses.",
+		"highlights": [""]
+	},
+	{
+		"company": "Nanotemper Technologies",
+		"location": "Munich, Germany",
+		"position": "Team Lead Data Science",
+		"website": "https://nanotempertech.com",
+		"startDate": "February 2018",
+		"endDate": "December 2020",
+		"summary": "Nanotemper defined in its new strategy to become a Knowledge Provider in the life sciences sector. In order to lay the foundation to move towards this goal the Data Sciene Team was founded and I aligned its mission and agile projects to enable reaching this goal. This includes setting up an internal data management system and developing cloud services to establish a data stream from the customer side. I was the Product Owner of the Tycho.Cloud project, Nanotemper's first web based analysis software which can be directly connected to the Tycho device. I also developed new algorithms for new analysis apps.",
+		"highlights": [""]
+	},
+	{
 		"company": "Pollinate Energy",
 		"location": "Lucknow, India",
 		"position": "Guest Program Leader",
